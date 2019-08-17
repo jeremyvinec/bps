@@ -30,7 +30,7 @@ export default class Footer extends React.Component{
                 </div>
                 <div class="container text-center text-md-left mt-5">
                 <div class="row mt-3">
-                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
                     <h6 class="text-uppercase font-weight-bold text-white">Société</h6>
                     <hr class="accent-2 mb-4 mt-0 d-inline-block mx-auto" style={{width: 60, backgroundColor: '#7c4dff'}}/>
                     <p>

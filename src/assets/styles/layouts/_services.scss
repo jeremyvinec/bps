@@ -1,0 +1,51 @@
+#services {
+    text-align: center;
+    margin: auto;
+}
+
+.bloc {
+    background-color: $lightPurple;
+    width: 360px;
+    height: 450px;
+    background-color: #adb5fe;
+    color: #ffffff;
+    display: inline-block;
+}
+
+.bloc p{
+    width: 200px;
+    height: 150px;
+    color: #ffffff;
+    margin: auto;
+}
+
+.bloc_1 {
+    background-color: $purple;
+    width: 360px;
+    height: 450px;
+    background-color: #9a98fd;
+    color: #ffffff;
+    display: inline-block;
+}
+
+.bloc_1 p{
+    width: 200px;
+    height: 150px;
+    color: #ffffff;
+    margin: auto;
+}
+
+.bloc img{
+    margin-top: 20%;
+}
+
+.bloc_1 img{
+    margin-top: 20%;
+}
+
+.bar{
+    width: 60px;
+    border: 1px solid #ffffff;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
