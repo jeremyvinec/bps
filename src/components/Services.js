@@ -1,14 +1,25 @@
 import React from 'react'
-import ArrowLeft from '../assets/svg/ArrowLeft'
-import ArrowRight from '../assets/svg/ArrowRight'
-import ArrowUp from '../assets/svg/ArrowUp'
+
+import Line1 from '../assets/svg/Line1'
+import Line2 from '../assets/svg/Line2'
+import Line3 from '../assets/svg/Line3'
+import Sale from '../assets/svg/Sale'
+import Gear from '../assets/svg/Gear'
+import Maintenance from '../assets/svg/Maintenance'
 
 export default class Services extends React.Component{
     render(){
         return(
                 <section class="container">
-                    <div class="row">
+                    <div class="title">
+                        <h2>La complémentarité de services <br/> au coeur de l’entreprise</h2>
+                    </div>
+                    <div class="col-sm line1">
+                        <Line1/>
+                    </div>
+                    <div class="row" style={{ marginTop: 150 }}>
                         <div class="col-sm text-left">
+                            <Sale/>
                             <h3>Prescription -Vente</h3>
                             <ul>
                                 <li><a href="">Pompes industrielles</a></li>
@@ -18,10 +29,11 @@ export default class Services extends React.Component{
                                 <li><a href="">Variation de fréquence</a></li>
                             </ul>
                         </div>
-                        <div class="col-sm arrow1">
-                            <ArrowRight/>
+                        <div class="col-sm line2">
+                            <Line2/>
                         </div>
-                        <div class="col-sm text-left">
+                        <div class="col-sm text-left" style={{ marginTop: 50 }}>
+                            <Gear/>
                             <h3>Installation - Réalisation</h3>
                             <ul>
                                 <li><a href="">Systèmes automatisés</a></li>
@@ -32,15 +44,13 @@ export default class Services extends React.Component{
                             </ul>
                         </div>
                     </div>
-                    <div class="title">
-                        <h2>La complémentarité de services <br/> au coeur de l’entreprise</h2>
+                    <div class="col-sm line3">
+                        <Line3/>
                     </div>
-                    <div class="row">
-                        <div class="col-sm arrow2">
-                            <ArrowUp/>
-                        </div>
+                    <div class="row" style={{ marginTop: 150 }}>
                         <div class="col-sm text-left">
-                            <h3>Réparation - Maintenance</h3>
+                        <Maintenance/>
+                        <h3>Réparation - Maintenance</h3>
                             <ul>
                                 <li><a href="">Atelier de bobinage agrée</a></li>
                                 <li><a href="">Réparation de pompes (toutes marques)</a></li>
@@ -49,9 +59,8 @@ export default class Services extends React.Component{
                                 <li><a href="">Maintenance sur site</a></li>
                             </ul>
                         </div>
-                        <div class="col-sm arrow3">
-                            <ArrowLeft/>
-                        </div>
+                        <div class="col-sm"></div>
+                        <div class="col-sm arrow3"></div>
                     </div>
                 </section>
         )

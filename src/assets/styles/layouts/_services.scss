@@ -1,26 +1,26 @@
-.arrow1 svg {
+.line1 svg{
+    position: absolute;
+    margin: auto;
+    top: 100px;
+    left: 0;
+    bottom: 0;
+    right: 349px;
+}
+
+.line2 svg {
     position: absolute;
     margin: auto;
     top: 0;
     left: 0;
-    bottom: 200px;
+    bottom: 0;
     right: 0;
 }
 
-.arrow2 svg {
+.line3 svg {
     position: absolute;
     margin: auto;
-    top: 0;
+    top: 150px;
     left: 0;
-    bottom: 200px;
-    right: 0;
-}
-
-.arrow3 svg {
-    position: absolute;
-    margin: auto;
-    top: 0;
-    left: 0;
-    bottom: 200px;
+    bottom: 0;
     right: 0;
 }
