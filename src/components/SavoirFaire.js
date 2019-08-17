@@ -3,8 +3,8 @@ import React from 'react'
 export default class Services extends React.Component{
     render(){
         return(
-                <section id="services" class="container">
-                    <h2>Services</h2>
+                <section class="container">
+                    <div class='title'><h2>Services</h2></div>
                     <div class="row">
                         <div class="bloc col">
                             <img src="img/icons/noun_1059089_cc.png"/>

@@ -3,8 +3,14 @@
     src: url('../fonts/Roboto-Regular.ttf');
 }
 
+@font-face {
+	font-family: 'Satisfy', cursive;
+	src: url('../fonts/Satisfy-Regular.ttf')
+}
+
 body{
     font-family: 'Roboto', sans-serif;
+    color: $darkSlateBlue;
 }
 
 a:link{
@@ -15,6 +21,16 @@ ul{
     list-style-type: none;
 }
 
-ul li {
+section{
+    margin-top: 100px;
+    text-align: center;
+}
 
+section a {
+    color: $darkSlateBlue;
+}
+
+.title{
+    margin: 50px;
+    text-align: center;
 }

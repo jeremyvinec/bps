@@ -6,7 +6,7 @@ import { faFacebook, faTwitter, faLinkedin } from '@fortawesome/free-brands-svg-
 export default class Footer extends React.Component{
     render(){
         return(
-            <footer class="page-footer font-small" style={{ backgroundColor: '#1c2331', color:'white' }}>
+            <footer class="page-footer font-small" style={{ backgroundColor: '#1c2331', color:'white', marginTop:100 }}>
                 <div style={{backgroundColor: '#6351ce'}}>
                 <div class="container">
                     <div class="row py-4 d-flex align-items-center">
@@ -92,8 +92,8 @@ export default class Footer extends React.Component{
                     </div>
                 </div>
                 </div>
-                <div class="footer-copyright text-center py-3" style={{ backgroundColor: 'rgba(0,0,0,.2)', color: 'rgba(255,255,255,.6)'}}>© 2019 Copyright:
-                <a href="https://jeremyvinec.dev/"> Jeremyvinec.dev</a>
+                <div class="footer-copyright text-center py-3" style={{ backgroundColor: 'rgba(0,0,0,.2)', color: 'rgba(255,255,255,.6)'}}>© 2019 Copyright :
+                <a class="signature" href="https://jeremyvinec.dev/">Jeremyvinec.dev</a>
                 </div>
             </footer>
         )
