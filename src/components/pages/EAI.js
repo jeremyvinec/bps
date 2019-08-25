@@ -12,8 +12,20 @@ export default class EAI extends React.Component{
                     <Carrousel/>
                 </header>
                 <main>
-                    <section>
-
+                    <section class='container'>
+                        <div class='banner'>
+                            <h1>Équipement & automatisme industriel</h1>
+                        </div>
+                        <div class='row'>
+                            <div class='col-4'>
+                                menu
+                            </div>
+                            <div class='col-8'>
+                                <div class='row'>
+                                    equipements
+                                </div>
+                            </div>
+                        </div>
                     </section>
                 </main>
                 <Footer/>
