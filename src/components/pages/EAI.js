@@ -3,7 +3,7 @@ import Menu from '../Menu'
 import Carrousel from '../Carrousel'
 import Footer from '../Footer'
 
-export default class Services extends React.Component{
+export default class EAI extends React.Component{
     render(){
         return(
             <React.Fragment>
@@ -13,7 +13,7 @@ export default class Services extends React.Component{
                 </header>
                 <main>
                     <section>
-                    
+
                     </section>
                 </main>
                 <Footer/>

@@ -5,6 +5,9 @@ import Societe from '../components/pages/Societe'
 import SavoirFaire from '../components/pages/SavoirFaire'
 import Services from '../components/pages/Services'
 import Contact from '../components/pages/Contact'
+import EAE from '../components/pages/EAE'
+import EAI from '../components/pages/EAI'
+import Synertech from '../components/pages/Synertech'
 
 const Navigation = createSwitchNavigator({
     Accueil: {
@@ -21,6 +24,15 @@ const Navigation = createSwitchNavigator({
     },
     Contact: {
         screen: Contact
+    },
+    EAE: {
+        screen: EAE
+    },
+    EAI: {
+        screen: EAI
+    },
+    Synertech: {
+        screen: Synertech
     }
 })
 

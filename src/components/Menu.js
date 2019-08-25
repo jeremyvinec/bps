@@ -1,6 +1,8 @@
 import React from 'react'
+import { Dropdown } from 'react-bootstrap'
 
 class Menu extends React.Component{
+
     render(){
         return(
             <nav className="navbar navbar-expand-lg navbar-light bg-light rounded">
@@ -19,6 +21,14 @@ class Menu extends React.Component{
                     <li className="nav-item">
                         <a className="nav-link" href='/SavoirFaire'>Savoir-Faire</a>
                     </li>
+                    <Dropdown>
+                        <Dropdown.Toggle variant="" id="dropdown-basic">Savoir-Faire</Dropdown.Toggle>
+                        <Dropdown.Menu>
+                            <Dropdown.Item href="/EAE">Équipements & Automatisme d'Élevage</Dropdown.Item>
+                            <Dropdown.Item href="/EAI">Équipements & Automatisme Industriel</Dropdown.Item>
+                            <Dropdown.Item href="/Synertech">Synertech</Dropdown.Item>
+                        </Dropdown.Menu>
+                    </Dropdown>
                     <li className="nav-item">
                         <a className="nav-link" href='/Services'>Services</a>
                     </li>
