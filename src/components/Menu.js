@@ -1,23 +1,33 @@
 import React from 'react'
-import { Navbar, Nav } from 'react-bootstrap'
-
 
 class Menu extends React.Component{
     render(){
         return(
-            <Navbar bg="light" expand="lg">
-            <Navbar.Brand href="#home">Bretagne Pompes Services</Navbar.Brand>
-            <Navbar.Toggle aria-controls="basic-navbar-nav" />
-            <Navbar.Collapse id="basic-navbar-nav">
-                <Nav className="mr-auto">
-                <Nav.Link href="#home">Accueil</Nav.Link>
-                <Nav.Link href="#society">Société</Nav.Link>
-                <Nav.Link href="#knowledge">Savoir-Faire</Nav.Link>
-                <Nav.Link href="#services">Services</Nav.Link>
-                <Nav.Link href="#contact">Contact</Nav.Link>
-                </Nav>
-            </Navbar.Collapse>
-            </Navbar>
+            <nav className="navbar navbar-expand-lg navbar-light bg-light rounded">
+                <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample10" aria-controls="navbarsExample10" aria-expanded="false" aria-label="Toggle navigation">
+                <span className="navbar-toggler-icon"></span>
+                </button>
+
+                <div className="collapse navbar-collapse justify-content-md-center" id="navbarsExample10">
+                <ul className="navbar-nav">
+                    <li className="nav-item">
+                    <a className="nav-link" href='/'>Accueil</a>
+                    </li>
+                    <li className="nav-item">
+                    <a className="nav-link"  href='/Societe'>Société</a>
+                    </li>
+                    <li className="nav-item">
+                        <a className="nav-link" href='/SavoirFaire'>Savoir-Faire</a>
+                    </li>
+                    <li className="nav-item">
+                        <a className="nav-link" href='/Services'>Services</a>
+                    </li>
+                    <li className="nav-item">
+                        <a className="nav-link" href='/Contact'>Contact</a>
+                    </li>
+                </ul>
+                </div>
+            </nav>
         )
     }
 }

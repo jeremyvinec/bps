@@ -11,7 +11,7 @@ export default class Footer extends React.Component{
                 <div class="container">
                     <div class="row py-4 d-flex align-items-center">
                     <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
-                        <h6 class="mb-0">Connectez-vous avec nous sur les réseaux sociaux !</h6>
+                        <p class="mb-0">Connectez-vous avec nous sur les réseaux sociaux !</p>
                     </div>
                     <div class="col-md-6 col-lg-7 text-center text-md-right">
                         <a class="fb-ic">

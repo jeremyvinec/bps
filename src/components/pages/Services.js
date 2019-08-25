@@ -1,11 +1,11 @@
 import React from 'react'
 
-import Line1 from '../assets/svg/Line1'
-import Line2 from '../assets/svg/Line2'
-import Line3 from '../assets/svg/Line3'
-import Sale from '../assets/svg/Sale'
-import Gear from '../assets/svg/Gear'
-import Maintenance from '../assets/svg/Maintenance'
+import Line1 from '../../assets/svg/Line1'
+import Line2 from '../../assets/svg/Line2'
+import Line3 from '../../assets/svg/Line3'
+import Sale from '../../assets/svg/Sale'
+import Gear from '../../assets/svg/Gear'
+import Maintenance from '../../assets/svg/Maintenance'
 
 export default class Services extends React.Component{
     render(){

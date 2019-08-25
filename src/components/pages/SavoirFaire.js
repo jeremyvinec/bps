@@ -1,8 +1,8 @@
 import React from 'react'
 
-import Remote from '../assets/svg/Remote'
-import Pump from '../assets/svg/Pump'
-import Motor from '../assets/svg/Motor'
+import Remote from '../../assets/svg/Remote'
+import Pump from '../../assets/svg/Pump'
+import Motor from '../../assets/svg/Motor'
 
 export default class Services extends React.Component{
     render(){

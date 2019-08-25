@@ -1,10 +1,10 @@
 import React from 'react';
-import Bps from './components/Bps'
+import Navigation from './navigation/Navigation'
 import './App.css';
 
 function App() {
   return (
-    <Bps/>
+    <Navigation/>
   );
 }
 

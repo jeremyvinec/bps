@@ -1,9 +1,9 @@
 import React from 'react'
-import Menu from './Menu'
-import Carrousel from './Carrousel'
+import Menu from '../Menu'
+import Carrousel from '../Carrousel'
 import SavoirFaire from './SavoirFaire'
 import Services from './Services'
-import Footer from './Footer'
+import Footer from '../Footer'
 
 class Bps extends React.Component{
     render(){
