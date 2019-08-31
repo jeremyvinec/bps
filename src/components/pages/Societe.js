@@ -42,7 +42,7 @@ export default class Societe extends React.Component{
                             </div>
                         </div>
                         <div class='banner'>
-                            <h1></h1>
+                            <h1>Exemple</h1>
                         </div>
                         <div class="row">
                             <div class="col">

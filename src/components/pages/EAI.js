@@ -2,9 +2,12 @@ import React from 'react'
 import Menu from '../Menu'
 import Carrousel from '../Carrousel'
 import Footer from '../Footer'
+import Thumbnails from '../thumbnails/Thumbnails'
+import { connect} from 'react-redux'
 
-export default class EAI extends React.Component{
+class EAI extends React.Component{
     render(){
+        console.log(this.props.data)
         return(
             <React.Fragment>
                 <header>
@@ -12,17 +15,17 @@ export default class EAI extends React.Component{
                     <Carrousel/>
                 </header>
                 <main>
-                    <section class='container'>
-                        <div class='banner'>
+                    <section className='container'>
+                        <div className='banner'>
                             <h1>Équipement & automatisme industriel</h1>
                         </div>
-                        <div class='row'>
-                            <div class='col-4'>
-                                menu
+                        <div className='row'>
+                            <div className='col-4'>
+                                Menu
                             </div>
-                            <div class='col-8'>
-                                <div class='row'>
-                                    equipements
+                            <div className='col-8'>
+                                <div className='row'>
+                                    <Thumbnails/>
                                 </div>
                             </div>
                         </div>
@@ -33,3 +36,11 @@ export default class EAI extends React.Component{
         )
     }
 }
+
+const mapStateToProps = (state) => {
+    return{
+        data: state.data
+    }
+}
+
+export default connect(mapStateToProps)(EAI)
