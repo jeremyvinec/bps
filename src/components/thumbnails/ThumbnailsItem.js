@@ -1,33 +1,22 @@
 import React from 'react'
-import { View, StyleSheet, TouchableOpacity, Image, Text } from 'react-native'
+import { View, StyleSheet, TouchableOpacity, Image, Text, H5 } from 'react-native'
 
 class Thumbnails extends React.Component{
 
-    constructor(props){
-        super(props)
-
-    }
-
-
     render(){
         const { thumbnails } = this.props
+        console.log(this.props)
         return(
-            <TouchableOpacity>
-                <View style={styles.content_container}>
-                    <View style={styles.header}>
-                        <Image/>
+                <TouchableOpacity>
+                    <View className="card" style={{width: '18rem'}}>
+                        <Image className="card-img-top" source="..." alt="Card image cap"/>
+                        <View className="card-body">
+                            <h5 className="card-title">{thumbnails.name}</h5>
+                            <Text className="card-text">{thumbnails.description}</Text>
+                            <a href="#" className="btn btn-primary">Voir le produit</a>
+                        </View>
                     </View>
-                    <View style={styles.title}>
-                        <Text>{thumbnails.name}</Text>
-                    </View>
-                    <View style={styles.desc}>
-                        <Text>{thumbnails.description}</Text>
-                    </View>
-                    <View style={styles.price}>
-                        <Text>10e</Text>
-                    </View>
-                </View>
-            </TouchableOpacity>
+                </TouchableOpacity>
         )
     }
 }

@@ -12,8 +12,7 @@ export default class Societe extends React.Component{
                     <Carrousel/>
                 </header>
                 <main>
-                    <section class='container'>
-                        <div class='container'>
+                    <section class='container societe'>
                         <div class='banner'>
                             <h1>Qui Sommes nous ?</h1>
                         </div>
@@ -106,7 +105,6 @@ export default class Societe extends React.Component{
                             <div class="col-sm">col-sm</div>
                             <div class="col-sm">col-sm</div>
                         </div>
-                    </div>
                     </section>
                 </main>
                 <Footer/>

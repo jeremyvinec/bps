@@ -1,16 +1,15 @@
 import React from 'react'
 import { StyleSheet, FlatList } from 'react-native'
-import { connect } from 'react-redux'
 import ThumbnailsItem from './ThumbnailsItem'
 
 class Thumbnails extends React.Component{
+
     render(){
         return(
             <FlatList
                 style={styles.list}
                 data={this.props.thumbnails}
-                extraData={this.state}
-                keyExtractor={(item) => item.id}
+                keyExtractor={(item) => item.id.toString()}
                 renderItem={({item}) => (
                     <ThumbnailsItem
                         thumbnails={item}
@@ -23,14 +22,8 @@ class Thumbnails extends React.Component{
 
 const styles = StyleSheet.create({
     list: {
-        flex: 1
+        flexFlow: 'row wrap !important'
     }
 })
 
-const mapStateToProps = (state) => {
-    return{
-        data: state.data
-    }
-}
-
-export default connect(mapStateToProps)(Thumbnails)
+export default Thumbnails

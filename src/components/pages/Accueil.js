@@ -41,7 +41,7 @@ class Bps extends React.Component{
                                     commodo posuere. Integer. 
                                 </p>
                             </div><div className="bloc_1 col">
-                                <Motor/>
+                                <Motor fill="#fff" width="93" height="68"/>
                                 <h4>Industriel</h4>
                                 <hr className="bar"/>
                                 <p>
@@ -51,7 +51,7 @@ class Bps extends React.Component{
                                     commodo posuere. Integer. 
                                 </p>
                             </div><div className="bloc col">
-                                <Pump/>
+                                <Pump fill="#fff" width="46" height="62"/>
                                 <h4>Synertech</h4>
                                 <hr className="bar"/>
                                 <p>
@@ -61,7 +61,7 @@ class Bps extends React.Component{
                                     commodo posuere. Integer. 
                                 </p>
                             </div><div className="bloc_1 col">
-                                <Motor/>
+                                <Motor fill="#fff" width="93" height="68"/>
                                 <h4>Maintenance</h4>
                                 <hr className="bar"/>
                                 <p>

@@ -1,8 +1,13 @@
 {
     "EAE":[
-        {"id":"1", "name":"Vibrant", "description":"blabla", "type":""}
+        {"id":"1", "name":"Vibrant", "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis efficitur.", "type":""}
     ],
     "EAI":[
-        {"id":"1", "name":"Vibrant", "description":"blabla", "type":""}
+        {"id":"1", "name":"Vibrant", "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis efficitur.", "type":""},
+        {"id":"2", "name":"Atex", "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis efficitur.", "type":""},
+        {"id":"3", "name":"Fonte - Alu", "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis efficitur.", "type":""},
+        {"id":"4", "name":"Frein", "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis efficitur.", "type":""},
+        {"id":"5", "name":"Inox", "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis efficitur.", "type":""},
+        {"id":"6", "name":"Tambours moteurs", "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis efficitur.", "type":""}
     ]
 }

@@ -2,12 +2,13 @@ import React from 'react'
 import Menu from '../Menu'
 import Carrousel from '../Carrousel'
 import Footer from '../Footer'
-import Thumbnails from '../thumbnails/Thumbnails'
+import ThumbnailsList from '../thumbnails/ThumbnailsList'
+import List from '../List'
 import { connect} from 'react-redux'
 
 class EAI extends React.Component{
     render(){
-        console.log(this.props.data)
+        const { data } = this.props
         return(
             <React.Fragment>
                 <header>
@@ -21,12 +22,12 @@ class EAI extends React.Component{
                         </div>
                         <div className='row'>
                             <div className='col-4'>
-                                Menu
+                                <List/>
                             </div>
                             <div className='col-8'>
-                                <div className='row'>
-                                    <Thumbnails/>
-                                </div>
+                                <ThumbnailsList
+                                    thumbnails={data}
+                                />
                             </div>
                         </div>
                     </section>
@@ -39,7 +40,7 @@ class EAI extends React.Component{
 
 const mapStateToProps = (state) => {
     return{
-        data: state.data
+        data: state.data.EAI
     }
 }
 

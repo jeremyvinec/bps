@@ -1,12 +1,14 @@
 import React from 'react'
 import Menu from '../Menu'
 import Carrousel from '../Carrousel'
+import ThumbnailsList from '../thumbnails/ThumbnailsList'
+import List from '../List'
 import Footer from '../Footer'
 import { connect } from 'react-redux'
 
 class EAE extends React.Component{
     render(){
-        console.log(this.props)
+        const { data } = this.props
         return(
             <React.Fragment>
                 <header>
@@ -14,8 +16,20 @@ class EAE extends React.Component{
                     <Carrousel/>
                 </header>
                 <main>
-                    <section>
-
+                    <section className='container'>
+                        <div className='banner'>
+                            <h1>Équipement & automatisme industriel</h1>
+                        </div>
+                        <div className='row'>
+                            <div className='col-4'>
+                                <List/>
+                            </div>
+                            <div className='col-8'>
+                                <ThumbnailsList
+                                    thumbnails={data}
+                                />
+                            </div>
+                        </div>
                     </section>
                 </main>
                 <Footer/>
@@ -26,7 +40,7 @@ class EAE extends React.Component{
 
 const mapStateToProps = (state) => {
     return{
-        data: state.data
+        data: state.data.EAE
     }
 }
 

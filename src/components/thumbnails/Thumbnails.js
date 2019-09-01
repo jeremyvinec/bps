@@ -9,7 +9,7 @@ class Thumbnails extends React.Component{
         return(
             <View style={styles.ThumbnailsList}>
                 <ThumbnailsList
-                    thumbnails={thumbnails}
+                    thumbnails={this.props.thumbnails}
                 />
             </View>
         )
