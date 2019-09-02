@@ -10,6 +10,7 @@ class Thumbnails extends React.Component{
                 style={styles.list}
                 data={this.props.thumbnails}
                 keyExtractor={(item) => item.id.toString()}
+                numColumns={2}
                 renderItem={({item}) => (
                     <ThumbnailsItem
                         thumbnails={item}

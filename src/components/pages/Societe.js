@@ -3,6 +3,13 @@ import Menu from '../Menu'
 import Carrousel from '../Carrousel'
 import Footer from '../Footer'
 
+import grundfos from '../../assets/img/partners/grundfos.png'
+import ebara from '../../assets/img/partners/ebara.jpg'
+import schneider from '../../assets/img/partners/schneider.jpg'
+import fancom from '../../assets/img/partners/fancom.gif'
+import motovario from '../../assets/img/partners/motovario.jpg'
+import rotor from '../../assets/img/partners/rotor.jpg'
+
 export default class Societe extends React.Component{
     render(){
         return(
@@ -98,12 +105,12 @@ export default class Societe extends React.Component{
                             <h2>Nos partenaires</h2>
                         </div>
                         <div class="row">
-                            <div class="col-sm">col-sm</div>
-                            <div class="col-sm">col-sm</div>
-                            <div class="col-sm">col-sm</div>
-                            <div class="col-sm">col-sm</div>
-                            <div class="col-sm">col-sm</div>
-                            <div class="col-sm">col-sm</div>
+                            <div class="col-sm"><img src={grundfos} width="150"/></div>
+                            <div class="col-sm"><img src={ebara} width="150"/></div>
+                            <div class="col-sm"><img src={schneider} width="150"/></div>
+                            <div class="col-sm"><img src={fancom} width="150"/></div>
+                            <div class="col-sm"><img src={motovario} width="150"/></div>
+                            <div class="col-sm"><img src={rotor} width="150"/></div>
                         </div>
                     </section>
                 </main>

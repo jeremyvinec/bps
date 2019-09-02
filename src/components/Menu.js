@@ -19,7 +19,7 @@ class Menu extends React.Component{
                     <a className="nav-link"  href='/Societe'>Société</a>
                     </li>
                     <Dropdown>
-                        <Dropdown.Toggle variant="" id="dropdown-basic">Savoir-Faire</Dropdown.Toggle>
+                        <Dropdown.Toggle className="DropdownToggle">Savoir-Faire</Dropdown.Toggle>
                         <Dropdown.Menu>
                             <Dropdown.Item href="/EAE">Équipements & Automatisme d'Élevage</Dropdown.Item>
                             <Dropdown.Item href="/EAI">Équipements & Automatisme Industriel</Dropdown.Item>
