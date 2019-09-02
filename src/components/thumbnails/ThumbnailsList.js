@@ -10,7 +10,7 @@ class Thumbnails extends React.Component{
                 style={styles.list}
                 data={this.props.thumbnails}
                 keyExtractor={(item) => item.id.toString()}
-                numColumns={2}
+                numColumns={3}
                 renderItem={({item}) => (
                     <ThumbnailsItem
                         thumbnails={item}
@@ -23,7 +23,7 @@ class Thumbnails extends React.Component{
 
 const styles = StyleSheet.create({
     list: {
-        flexFlow: 'row wrap !important'
+        flexFlow: 'row wrap !important',
     }
 })
 

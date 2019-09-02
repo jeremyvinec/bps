@@ -4,7 +4,7 @@ import { Carousel } from 'react-bootstrap'
 export default class Carrousel extends React.Component{
     render(){
         return(
-            <Carousel>
+            <Carousel style={{marginTop: 105}}>
             <Carousel.Item>
                 <img
                 className="d-block w-100"

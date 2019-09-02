@@ -3,6 +3,10 @@ import Motor from '../assets/svg/Motor'
 import Bobinage from '../assets/svg/Bobinage'
 import DrumMotor from '../assets/svg/DrumMotor'
 import Pump from '../assets/svg/Pump'
+import Electricity from '../assets/svg/Electricity'
+import Ventilation from '../assets/svg/Ventilation'
+import Transmission from '../assets/svg/Transmission'
+import All from '../assets/svg/All'
 
 export default class List extends React.Component{
 
@@ -11,6 +15,7 @@ export default class List extends React.Component{
             <div className="container">
                 <ul className="list-group">
                     <li className="list-group-item d-flex justify-content-between align-items-center">
+                        <All fill="#27e29b" width="40" height="30"/>
                         Tous
                         <span className="badge badge-primary badge-pill">14</span>
                     </li>
@@ -21,12 +26,12 @@ export default class List extends React.Component{
                     </li>
                     <li className="list-group-item d-flex justify-content-between align-items-center">
                         <Motor fill="#27e29b" width="40" height="30"/>
-                        Moteur - Réducteurs
+                        Moteur Réducteurs
                         <span className="badge badge-primary badge-pill">1</span>
                     </li>
                     <li className="list-group-item d-flex justify-content-between align-items-center">
-                        <DrumMotor fill="#27e29b" width="40" height="30"/>
-                        Tombours moteurs
+                        <Transmission fill="#27e29b" width="40" height="30"/>
+                        Transmission
                         <span className="badge badge-primary badge-pill">1</span>
                     </li>
                     <li className="list-group-item d-flex justify-content-between align-items-center">
@@ -35,11 +40,13 @@ export default class List extends React.Component{
                         <span className="badge badge-primary badge-pill">1</span>
                     </li>
                     <li className="list-group-item d-flex justify-content-between align-items-center">
-                        Variateur mécanique
+                        <Electricity fill="#27e29b" width="40" height="30"/>
+                        Électricité
                         <span className="badge badge-primary badge-pill">1</span>
                     </li>
                     <li className="list-group-item d-flex justify-content-between align-items-center">
-                        Vibrant
+                        <Ventilation fill="#27e29b" width="40" height="30"/>
+                        Ventilation
                         <span className="badge badge-primary badge-pill">1</span>
                     </li>
                 </ul>

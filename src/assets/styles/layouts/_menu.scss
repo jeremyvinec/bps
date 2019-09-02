@@ -6,6 +6,8 @@
     background-color: $green;
     color: $white;
     border-radius: 17px;
+    width: 110px;
+    text-align: center;
 }
 
 .dropdown-toggle::after {
@@ -15,6 +17,7 @@
 .dropdown-menu {
     border: none;
     left: -100px;
+    background-color: transparent
 }
 
 .btn {
@@ -23,7 +26,9 @@
 }
 
 .btn:focus {
-    box-shadow: none
+    box-shadow: none;
+    width: 110px;
+    text-align: center;
 }
 
 .btn:hover {
@@ -33,5 +38,6 @@
 
 .dropdown-item:hover, .dropdown-item:focus {
     background-color: $green;
-    color: $white
+    color: $white;
+    border-radius: 17px;
 }

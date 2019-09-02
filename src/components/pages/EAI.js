@@ -21,10 +21,10 @@ class EAI extends React.Component{
                             <h1>Équipement & automatisme industriel</h1>
                         </div>
                         <div className='row'>
-                            <div className='col-4'>
+                            <div className='col-3'>
                                 <List/>
                             </div>
-                            <div className='col-8'>
+                            <div className='col-9'>
                                 <ThumbnailsList
                                     thumbnails={data}
                                 />

@@ -13,7 +13,9 @@ export default class Services extends React.Component{
                 </header>
                 <main>
                     <section>
-
+                        <div class='banner'>
+                            <h1>Notre expérience à votre service</h1>
+                        </div>
                     </section>
                 </main>
                 <Footer/>
