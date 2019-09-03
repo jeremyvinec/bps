@@ -8,6 +8,7 @@ import Contact from '../components/pages/Contact'
 import EAE from '../components/pages/EAE'
 import EAI from '../components/pages/EAI'
 import Synertech from '../components/pages/Synertech'
+import Detail from '../components/pages/Detail'
 
 const Navigation = createSwitchNavigator({
     Accueil: {
@@ -33,6 +34,9 @@ const Navigation = createSwitchNavigator({
     },
     Synertech: {
         screen: Synertech
+    },
+    Detail: {
+        screen: Detail
     }
 })
 

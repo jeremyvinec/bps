@@ -9,6 +9,7 @@ import { connect } from 'react-redux'
 class EAE extends React.Component{
     render(){
         const { data } = this.props
+        console.log(this.props)
         return(
             <React.Fragment>
                 <header>

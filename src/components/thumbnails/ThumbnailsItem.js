@@ -1,6 +1,8 @@
 import React from 'react'
 import { View, StyleSheet, TouchableOpacity, Image, Text } from 'react-native'
 
+//import { withNavigation } from 'react-navigation'
+
 import bobinage from '../../assets/img/equipment/bobinage.jpg'
 import pompes from '../../assets/img/equipment/pompes.png'
 import moteurs_reducteurs from '../../assets/img/equipment/moteurs_reducteurs.jpg'
@@ -30,37 +32,20 @@ class Thumbnails extends React.Component{
 
     render(){
         const { thumbnails } = this.props
+        console.log(this.props)
         return(
                 <TouchableOpacity onPress={() => this.props.navigation.navigate('')}>
-                    <View className="card" style={{width: '18rem', alignItems: 'center', marginRight: 10, marginBottom: 10, width: '16.5rem'}}>
-                        <Image className="card-img-top" source={{ uri: this._imgCard() }} style={{ width: 100, height: 100 }} alt="Card image cap"/>
-                        <View className="card-body">
+                    <div className="card">
+                        <img className="card-img-top" source={{ uri: this._imgCard() }} alt="Card image cap"/>
+                        <div className="card-body">
                             <h5 className="card-title">{thumbnails.name}</h5>
-                            <Text className="card-text">{thumbnails.description}</Text>
+                            <p className="card-text">{thumbnails.description}</p>
                             <a href="#" className="btn">Voir le produit</a>
-                        </View>
-                    </View>
+                        </div>
+                    </div>
                 </TouchableOpacity>
         )
     }
 }
-
-const styles = StyleSheet.create({
-    content_container: {
-        flex: 1
-    },
-    header:{
-
-    },
-    title: {
-
-    },
-    desc: {
-
-    },
-    price: {
-
-    }
-})
 
 export default Thumbnails
