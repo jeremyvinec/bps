@@ -2,7 +2,7 @@ import React from 'react'
 import Menu from '../Menu'
 import Carrousel from '../Carrousel'
 import ThumbnailsList from '../thumbnails/ThumbnailsList'
-import List from '../List'
+import ListEAE from '../listEAE'
 import Footer from '../Footer'
 import { connect } from 'react-redux'
 
@@ -21,10 +21,10 @@ class EAE extends React.Component{
                             <h1>Équipement & automatisme industriel</h1>
                         </div>
                         <div className='row'>
-                            <div className='col-4'>
-                                <List/>
+                            <div className='col-3'>
+                                <ListEAE/>
                             </div>
-                            <div className='col-8'>
+                            <div className='col-9'>
                                 <ThumbnailsList
                                     thumbnails={data}
                                 />

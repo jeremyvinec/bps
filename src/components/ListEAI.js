@@ -1,14 +1,13 @@
 import React from 'react'
 import Motor from '../assets/svg/Motor'
 import Bobinage from '../assets/svg/Bobinage'
-import DrumMotor from '../assets/svg/DrumMotor'
 import Pump from '../assets/svg/Pump'
 import Electricity from '../assets/svg/Electricity'
 import Ventilation from '../assets/svg/Ventilation'
 import Transmission from '../assets/svg/Transmission'
 import All from '../assets/svg/All'
 
-export default class List extends React.Component{
+export default class ListEAI extends React.Component{
 
     render(){
         return(

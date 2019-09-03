@@ -30,7 +30,6 @@ class Thumbnails extends React.Component{
 
     render(){
         const { thumbnails } = this.props
-        console.log(this.props)
         return(
                 <TouchableOpacity onPress={() => this.props.navigation.navigate('')}>
                     <View className="card" style={{width: '18rem', alignItems: 'center', marginRight: 10, marginBottom: 10, width: '16.5rem'}}>

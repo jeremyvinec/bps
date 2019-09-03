@@ -1,7 +1,7 @@
 class Api {
 
     static getDataFromApi(){
-        return fetch('https://api.myjson.com/bins/8v5uj', {
+        return fetch('https://api.myjson.com/bins/16mgmb', {
             method: 'GET',
             headers: {
             'Accept': 'application/json',

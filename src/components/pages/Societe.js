@@ -19,12 +19,12 @@ export default class Societe extends React.Component{
                     <Carrousel/>
                 </header>
                 <main>
-                    <section class='container societe'>
-                        <div class='banner'>
+                    <section className='container societe'>
+                        <div className='banner'>
                             <h1>Qui Sommes nous ?</h1>
                         </div>
-                        <div class="row">
-                            <div class="col">
+                        <div className="row">
+                            <div className="col">
                                 <h2>Historique</h2>
                                 <p>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
@@ -35,7 +35,7 @@ export default class Societe extends React.Component{
                                 Morbi auctor, felis eu venenatis ullamcorper, nulla augue volutpat urna, sit amet lobortis magna risus nec ipsum.
                                 </p>
                             </div>
-                            <div class="col">
+                            <div className="col">
                                 <h2>Nos engagements</h2>
                                 <p>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
@@ -47,11 +47,11 @@ export default class Societe extends React.Component{
                                 </p>
                             </div>
                         </div>
-                        <div class='banner'>
+                        <div className='banner'>
                             <h1>Exemple</h1>
                         </div>
-                        <div class="row">
-                            <div class="col">
+                        <div className="row">
+                            <div className="col">
                                 <h2>Activités</h2>
                                 <p>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
@@ -62,7 +62,7 @@ export default class Societe extends React.Component{
                                 Morbi auctor, felis eu venenatis ullamcorper, nulla augue volutpat urna, sit amet lobortis magna risus nec ipsum.
                                 </p>
                             </div>
-                            <div class="col">
+                            <div className="col">
                                 <h2>Équipe, valeurs, Atouts</h2>
                                 <p>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
@@ -74,11 +74,11 @@ export default class Societe extends React.Component{
                                 </p>
                             </div>
                         </div>
-                        <div class='banner'>
+                        <div className='banner'>
                             <h1>Notre expérience à votre service</h1>
                         </div>
-                        <div class="row">
-                            <div class="col">
+                        <div className="row">
+                            <div className="col">
                                 <h2>Nos valeurs</h2>
                                 <p>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
@@ -89,7 +89,7 @@ export default class Societe extends React.Component{
                                 Morbi auctor, felis eu venenatis ullamcorper, nulla augue volutpat urna, sit amet lobortis magna risus nec ipsum.
                                 </p>
                             </div>
-                            <div class="col">
+                            <div className="col">
                                 <h2>Nos process</h2>
                                 <p>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
@@ -104,13 +104,13 @@ export default class Societe extends React.Component{
                         <div>
                             <h2>Nos partenaires</h2>
                         </div>
-                        <div class="row">
-                            <div class="col-sm"><img src={grundfos} width="150"/></div>
-                            <div class="col-sm"><img src={ebara} width="150"/></div>
-                            <div class="col-sm"><img src={schneider} width="150"/></div>
-                            <div class="col-sm"><img src={fancom} width="150"/></div>
-                            <div class="col-sm"><img src={motovario} width="150"/></div>
-                            <div class="col-sm"><img src={rotor} width="150"/></div>
+                        <div className="row">
+                            <div className="col-sm"><img src={grundfos} width="150"/></div>
+                            <div className="col-sm"><img src={ebara} width="150"/></div>
+                            <div className="col-sm"><img src={schneider} width="150"/></div>
+                            <div className="col-sm"><img src={fancom} width="150"/></div>
+                            <div className="col-sm"><img src={motovario} width="150"/></div>
+                            <div className="col-sm"><img src={rotor} width="150"/></div>
                         </div>
                     </section>
                 </main>

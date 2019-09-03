@@ -3,7 +3,7 @@ import Menu from '../Menu'
 import Carrousel from '../Carrousel'
 import Footer from '../Footer'
 import ThumbnailsList from '../thumbnails/ThumbnailsList'
-import List from '../List'
+import ListEAI from '../ListEAI'
 import { connect} from 'react-redux'
 
 class EAI extends React.Component{
@@ -22,7 +22,7 @@ class EAI extends React.Component{
                         </div>
                         <div className='row'>
                             <div className='col-3'>
-                                <List/>
+                                <ListEAI/>
                             </div>
                             <div className='col-9'>
                                 <ThumbnailsList
