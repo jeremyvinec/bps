@@ -29,11 +29,11 @@ class Thumbnails extends React.Component{
     }
 
     render(){
-        const { thumbnails, navigation, displayDetail } = this.props
+        const { thumbnails, displayDetail } = this.props
         return(
                 <TouchableOpacity onPress={() => displayDetail(thumbnails)}>
                     <div className="card">
-                        <img className="card-img-top" source={{ uri: this._imgCard() }} alt="Card image cap"/>
+                        <img className="card-img-top" style={{width: '100px'}} src={this._imgCard()} alt="Card image cap"/>
                         <div className="card-body">
                             <h5 className="card-title">{thumbnails.name}</h5>
                             <p className="card-text">{thumbnails.description}</p>

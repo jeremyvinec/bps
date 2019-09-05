@@ -17,7 +17,7 @@ import Line3 from '../../assets/svg/Line3'
 import Sale from '../../assets/svg/Sale'
 import Gear from '../../assets/svg/Gear'
 import Maintenance from '../../assets/svg/Maintenance'*/
-import services from '../../assets/img/services.png'
+import Services from '../../assets/svg/Services'
 
 class Bps extends React.Component{
     render(){
@@ -78,8 +78,36 @@ class Bps extends React.Component{
                         <div className="title">
                             <h2>La complémentarité de services <br/> au coeur de l’entreprise</h2>
                         </div>
-                        <div className="services_img">
-                            
+                        <Services width="1140" height="1000" />
+                        <div className="services_text">
+                            <h3>Prescription -Vente</h3>
+                            <ul>
+                                <li><a href="#">Pompes industrielles</a></li>
+                                <li><a href="#">Moteurs électriques</a></li>
+                                <li><a href="#">Transmissions mécanique</a></li>
+                                <li><a href="#">Variation de fréquence</a></li>
+                                <li><a href="#">Systèmes de ventilation</a></li>
+                            </ul>
+                        </div>
+                        <div className="services_text2">
+                            <h3>Prescription -Vente</h3>
+                            <ul>
+                                <li><a href="#">Pompes industrielles</a></li>
+                                <li><a href="#">Moteurs électriques</a></li>
+                                <li><a href="#">Transmissions mécanique</a></li>
+                                <li><a href="#">Variation de fréquence</a></li>
+                                <li><a href="#">Systèmes de ventilation</a></li>
+                            </ul>
+                        </div>
+                        <div className="services_text3">
+                            <h3>Prescription -Vente</h3>
+                            <ul>
+                                <li><a href="#">Pompes industrielles</a></li>
+                                <li><a href="#">Moteurs électriques</a></li>
+                                <li><a href="#">Transmissions mécanique</a></li>
+                                <li><a href="#">Variation de fréquence</a></li>
+                                <li><a href="#">Systèmes de ventilation</a></li>
+                            </ul>
                         </div>
                     </section>
                 </main>
