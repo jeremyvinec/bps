@@ -26,7 +26,7 @@ export default class Synertech extends React.Component{
                                     <div>
                                         <h2>Actions préventives :</h2>
                                         <h3>→ Identifier, anticiper et corriger les défauts sur machines tournantes.</h3>
-                                        <img src=""/><img src=""/><img src=""/>
+                                        <img src="" alt=""/><img src="" alt=""/><img src="" alt=""/>
                                     </div>
                                     <div>
                                         <h3>→ Lignage laser</h3>

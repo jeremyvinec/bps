@@ -43,8 +43,12 @@ class listEAE extends React.Component{
         })
     }
 
-    _sort(){
-        
+    _filter(text){
+        const newData = this.props.thumbnails.filter(item => {
+            const itemData = `${item.type}`
+            return itemData.indexOf(text) > -1
+        })
+        this.props.dispatch({type: 'LOAD_FILTER', value: newData})
     }
 
     render(){
@@ -53,49 +57,49 @@ class listEAE extends React.Component{
         return(
             <div className="container">
                 <ul className="list-group">
-                    <TouchableOpacity onPress={() => this._sort()}>
+                    <TouchableOpacity onPress={() => this._filter('')}>
                         <li className="list-group-item d-flex justify-content-between align-items-center">
                             <All fill="#27e29b" width="40" height="30"/>
                             Tous
                             <span className="badge badge-primary badge-pill">{thumbnails.length}</span>
                         </li>
                     </TouchableOpacity>
-                    <TouchableOpacity onPress={() => this._sort()}>
+                    <TouchableOpacity onPress={() => this._filter('eclairage')}>
                         <li className="list-group-item d-flex justify-content-between align-items-center">
                             <Electricity fill="#27e29b" width="40" height="30"/>
                             Éclairage
                             <span className="badge badge-primary badge-pill">{eclairage}</span>
                         </li>
                     </TouchableOpacity>
-                    <TouchableOpacity onPress={() => this._sort()}>
+                    <TouchableOpacity onPress={() => this._filter('pesage')}>
                         <li className="list-group-item d-flex justify-content-between align-items-center">
                             <Weighing fill="#27e29b" width="40" height="30"/>
                             Pesage
                             <span className="badge badge-primary badge-pill">{pesage}</span>
                         </li>
                     </TouchableOpacity>
-                    <TouchableOpacity onPress={() => this._sort()}>
+                    <TouchableOpacity onPress={() => this._filter('chauffage')}>
                         <li className="list-group-item d-flex justify-content-between align-items-center">
                             <Heating fill="#27e29b" width="40" height="30"/>
                             Chauffage
                             <span className="badge badge-primary badge-pill">{chauffage}</span>
                         </li>
                     </TouchableOpacity>
-                    <TouchableOpacity onPress={() => this._sort()}>
+                    <TouchableOpacity onPress={() => this._filter('echangeur')}>
                         <li className="list-group-item d-flex justify-content-between align-items-center">
                             <Exchange fill="#27e29b" width="40" height="30"/>
                             Échangeur
                             <span className="badge badge-primary badge-pill">{echangeur}</span>
                         </li>
                     </TouchableOpacity>
-                    <TouchableOpacity onPress={() => this._sort()}>
+                    <TouchableOpacity onPress={() => this._filter('')}>
                         <li className="list-group-item d-flex justify-content-between align-items-center">
                             <WaterTreatment fill="#27e29b" width="40" height="30"/>
                             Alimentation &<br/>Traitement de l'eau
                             <span className="badge badge-primary badge-pill">1</span>
                         </li>
                     </TouchableOpacity>
-                    <TouchableOpacity onPress={() => this._sort()}>
+                    <TouchableOpacity onPress={() => this._filter('ventilation')}>
                         <li className="list-group-item d-flex justify-content-between align-items-center">
                             <Ventilation fill="#27e29b" width="40" height="30"/>
                             Ventilation
@@ -110,7 +114,8 @@ class listEAE extends React.Component{
 
 const mapStateToProps = (state) => {
     return{
-        thumbnails : state.data.EAE
+        thumbnails : state.data.EAE,
+        filter: state.filter
     }
 }
 

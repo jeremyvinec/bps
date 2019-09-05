@@ -8,7 +8,8 @@ import { connect} from 'react-redux'
 
 class EAI extends React.Component{
     render(){
-        const { data } = this.props
+        const { data, navigation, filter } = this.props
+        console.log(this.props)
         return(
             <React.Fragment>
                 <header>
@@ -22,11 +23,14 @@ class EAI extends React.Component{
                         </div>
                         <div className='row'>
                             <div className='col-3'>
-                                <ListEAI/>
+                                <ListEAI
+                                    thumbnails={data}
+                                />
                             </div>
                             <div className='col-9'>
                                 <ThumbnailsList
-                                    thumbnails={data}
+                                    thumbnails={filter}
+                                    navigation={navigation}
                                 />
                             </div>
                         </div>
@@ -40,7 +44,8 @@ class EAI extends React.Component{
 
 const mapStateToProps = (state) => {
     return{
-        data: state.data.EAI
+        data: state.data.EAI,
+        filter: state.filter
     }
 }
 

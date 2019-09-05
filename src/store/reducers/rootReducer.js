@@ -1,5 +1,6 @@
 import { AsyncStorage } from 'react-native'
 import data from './dataReducer'
+import filter from './filterReducer'
 import { persistCombineReducers } from 'redux-persist'
 
 const rootPersistConfig = {
@@ -8,7 +9,7 @@ const rootPersistConfig = {
 }
 
 const rootReducer = persistCombineReducers(rootPersistConfig, {
-    data
+    data, filter
 })
 
 export default rootReducer

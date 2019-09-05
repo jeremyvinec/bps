@@ -1,5 +1,5 @@
 import React from 'react'
-import { View, StyleSheet, TouchableOpacity, Image, Text } from 'react-native'
+import { TouchableOpacity } from 'react-native'
 
 //import { withNavigation } from 'react-navigation'
 
@@ -32,7 +32,6 @@ class Thumbnails extends React.Component{
 
     render(){
         const { thumbnails } = this.props
-        console.log(this.props)
         return(
                 <TouchableOpacity onPress={() => this.props.navigation.navigate('')}>
                     <div className="card">

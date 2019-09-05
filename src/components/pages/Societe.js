@@ -105,12 +105,12 @@ export default class Societe extends React.Component{
                             <h2>Nos partenaires</h2>
                         </div>
                         <div className="row">
-                            <div className="col-sm"><img src={grundfos} width="150"/></div>
-                            <div className="col-sm"><img src={ebara} width="150"/></div>
-                            <div className="col-sm"><img src={schneider} width="150"/></div>
-                            <div className="col-sm"><img src={fancom} width="150"/></div>
-                            <div className="col-sm"><img src={motovario} width="150"/></div>
-                            <div className="col-sm"><img src={rotor} width="150"/></div>
+                            <div className="col-sm"><img src={grundfos} width="150" alt="grundfos"/></div>
+                            <div className="col-sm"><img src={ebara} width="150" alt="ebara"/></div>
+                            <div className="col-sm"><img src={schneider} width="150" alt="schneider"/></div>
+                            <div className="col-sm"><img src={fancom} width="150" alt="fancom"/></div>
+                            <div className="col-sm"><img src={motovario} width="150" alt="motovario"/></div>
+                            <div className="col-sm"><img src={rotor} width="150" alt="rotor"/></div>
                         </div>
                     </section>
                 </main>

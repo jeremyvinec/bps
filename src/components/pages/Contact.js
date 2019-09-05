@@ -28,7 +28,7 @@ export default class Contact extends React.Component{
                                     </p>
                                     <h4>Email</h4> 
                                     <p>
-                                        <a href="">contact@bps29.fr</a>
+                                        <a href="contact@bps29.fr">contact@bps29.fr</a>
                                     </p>
                                 </div>
                             </div>

@@ -14,13 +14,13 @@ export default class Footer extends React.Component{
                         <p className="mb-0">Connectez-vous avec nous sur les réseaux sociaux !</p>
                     </div>
                     <div className="col-md-6 col-lg-7 text-center text-md-right">
-                        <a href='#' className="fb-ic">
+                        <a href='https://jeremyvinec.dev/' className="fb-ic">
                             <FontAwesomeIcon icon={faFacebook} color='white' style={{ marginRight: 14 }}/>
                         </a>
-                        <a href='#' className="tw-ic">
+                        <a href='https://jeremyvinec.dev/' className="tw-ic">
                             <FontAwesomeIcon icon={faTwitter} color='white' style={{ marginRight: 14 }}/>
                         </a>
-                        <a href='#' className="li-ic">
+                        <a href='https://jeremyvinec.dev/' className="li-ic">
                             <FontAwesomeIcon icon={faLinkedin} color='white'/>
                         </a>
                     </div>

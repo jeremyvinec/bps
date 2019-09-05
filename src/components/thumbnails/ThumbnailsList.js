@@ -23,7 +23,7 @@ class Thumbnails extends React.Component{
 
 const styles = StyleSheet.create({
     list: {
-        flexFlow: 'row wrap !important',
+        //flexFlow: 'column wrap !important',
     }
 })
 

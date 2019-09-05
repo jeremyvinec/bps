@@ -6,10 +6,11 @@ import ListEAE from '../listEAE'
 import Footer from '../Footer'
 import { connect } from 'react-redux'
 
+import links from '../../data/list'
+
 class EAE extends React.Component{
     render(){
-        const { data } = this.props
-        console.log(this.props)
+        const { data, filter } = this.props
         return(
             <React.Fragment>
                 <header>
@@ -23,11 +24,11 @@ class EAE extends React.Component{
                         </div>
                         <div className='row'>
                             <div className='col-3'>
-                                <ListEAE/>
+                                <ListEAE links={links}/>
                             </div>
                             <div className='col-9'>
                                 <ThumbnailsList
-                                    thumbnails={data}
+                                    thumbnails={filter}
                                 />
                             </div>
                         </div>
@@ -41,7 +42,8 @@ class EAE extends React.Component{
 
 const mapStateToProps = (state) => {
     return{
-        data: state.data.EAE
+        data: state.data.EAE,
+        filter: state.filter
     }
 }
 

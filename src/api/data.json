@@ -1,5 +1,5 @@
 {
-    "EAE":[
+    "EAE": [
         {"id":"1", "name":"Classique", "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis efficitur.", "type":"ventilation"},
         {"id":"2", "name":"Tunnel", "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis efficitur.", "type":"ventilation"},
         {"id":"3", "name":"MTT", "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis efficitur.", "type":"ventilation"},
@@ -10,7 +10,7 @@
         {"id":"8", "name":"Chauffage", "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis efficitur.", "type":"chauffage"},
         {"id":"9", "name":"Échangeur", "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis efficitur.", "type":"echangeur"}
     ],
-    "EAI":[
+    "EAI": [
         {"id":"1", "name":"Vibrant", "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis efficitur.", "type":"vibrant"},
         {"id":"2", "name":"Atex", "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis efficitur.", "type":""},
         {"id":"3", "name":"Fonte - Alu", "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis efficitur.", "type":""},
