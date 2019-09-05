@@ -4,7 +4,12 @@ import ThumbnailsItem from './ThumbnailsItem'
 
 class Thumbnails extends React.Component{
 
+    _displayDetail = (thumbnails) => {
+        this.props.navigation.navigate('Detail', { thumbnails: thumbnails })
+    }
+
     render(){
+        const { navigation }  = this.props
         return(
             <FlatList
                 style={styles.list}
@@ -14,6 +19,8 @@ class Thumbnails extends React.Component{
                 renderItem={({item}) => (
                     <ThumbnailsItem
                         thumbnails={item}
+                        navigation={navigation}
+                        displayDetail={this._displayDetail}
                     />
                 )}
             />

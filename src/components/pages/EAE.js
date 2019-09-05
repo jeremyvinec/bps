@@ -10,7 +10,8 @@ import links from '../../data/list'
 
 class EAE extends React.Component{
     render(){
-        const { data, filter } = this.props
+        const { data, filter, navigation } = this.props
+        console.log(this.props)
         return(
             <React.Fragment>
                 <header>
@@ -29,6 +30,7 @@ class EAE extends React.Component{
                             <div className='col-9'>
                                 <ThumbnailsList
                                     thumbnails={filter}
+                                    navigation={navigation}
                                 />
                             </div>
                         </div>

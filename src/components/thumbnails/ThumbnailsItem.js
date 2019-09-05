@@ -1,8 +1,6 @@
 import React from 'react'
 import { TouchableOpacity } from 'react-native'
 
-//import { withNavigation } from 'react-navigation'
-
 import bobinage from '../../assets/img/equipment/bobinage.jpg'
 import pompes from '../../assets/img/equipment/pompes.png'
 import moteurs_reducteurs from '../../assets/img/equipment/moteurs_reducteurs.jpg'
@@ -31,9 +29,9 @@ class Thumbnails extends React.Component{
     }
 
     render(){
-        const { thumbnails } = this.props
+        const { thumbnails, navigation, displayDetail } = this.props
         return(
-                <TouchableOpacity onPress={() => this.props.navigation.navigate('')}>
+                <TouchableOpacity onPress={() => displayDetail(thumbnails)}>
                     <div className="card">
                         <img className="card-img-top" source={{ uri: this._imgCard() }} alt="Card image cap"/>
                         <div className="card-body">
