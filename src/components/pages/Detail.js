@@ -65,7 +65,7 @@ class Detail extends React.Component{
                                     {this._getMoreText()}
                                 </div>
                                 <TouchableOpacity onPress={() => this.props.navigation.goBack()}>
-                                    <Cross with="100" height="100" fill="#666666"/>
+                                    <Cross with="20" height="20" fill="#666666"/>
                                 </TouchableOpacity>
                             </div>
                           </div>

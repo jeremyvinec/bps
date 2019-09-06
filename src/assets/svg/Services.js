@@ -1,5 +1,5 @@
 import React from 'react'
-import { Svg, Path, Rect, Circle, Mask, Line, Defs, Pattern } from 'react-native-svg'
+import { Svg, Path, Circle, Mask } from 'react-native-svg'
 
 const Services = props => (
     <Svg width={props.width} height={props.height} viewBox="0 0 1440 1200" fill="none" xmlns="http://www.w3.org/2000/svg">

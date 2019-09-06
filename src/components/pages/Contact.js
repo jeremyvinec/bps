@@ -1,6 +1,6 @@
 import React from 'react'
 import Menu from '../Menu'
-import Carrousel from '../Carrousel'
+import Map from '../Map'
 import Footer from '../Footer'
 
 export default class Contact extends React.Component{
@@ -9,7 +9,7 @@ export default class Contact extends React.Component{
             <React.Fragment>
                 <header>
                     <Menu/>
-                    <Carrousel/>
+                    <Map/>
                 </header>
                 <main>
                     <section className="container">

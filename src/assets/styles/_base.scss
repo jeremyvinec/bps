@@ -31,6 +31,10 @@ section a {
     color: $darkSlateBlue;
 }
 
+a:hover {
+    color: $green
+}
+
 .title{
     margin: 50px;
     text-align: center;
