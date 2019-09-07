@@ -33,16 +33,16 @@ export default class Footer extends React.Component{
                     <h6 className="text-uppercase font-weight-bold text-white">Société</h6>
                     <hr className="accent-2 mb-4 mt-0 d-inline-block mx-auto" style={{width: 60, backgroundColor: '#7c4dff'}}/>
                     <p>
-                        <a href="#!">Entreprise</a>
+                        <a href="/societe">Entreprise</a>
                     </p>
                     <p>
-                        <a href="#!">Historique</a>
+                        <a href="/societe">Historique</a>
                     </p>
                     <p>
-                        <a href="#!">Activités</a>
+                        <a href="/societe">Activités</a>
                     </p>
                     <p>
-                        <a href="#!">Partenaires</a>
+                        <a href="/societe">Partenaires</a>
                     </p>
                     </div>
                     <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">

@@ -9,14 +9,6 @@ import Remote from '../../assets/svg/Remote'
 import Pump from '../../assets/svg/Pump'
 import Motor from '../../assets/svg/Motor'
 
-
-// Services
-/*import Line1 from '../../assets/svg/Line1'
-import Line2 from '../../assets/svg/Line2'
-import Line3 from '../../assets/svg/Line3'
-import Sale from '../../assets/svg/Sale'
-import Gear from '../../assets/svg/Gear'
-import Maintenance from '../../assets/svg/Maintenance'*/
 import Services from '../../assets/svg/Services'
 
 class Bps extends React.Component{
@@ -29,11 +21,11 @@ class Bps extends React.Component{
                 </header>
                 <main>
                     <section className="container">
-                        <div className='title'><h2>Services</h2></div>
+                        <div className='title'><h2>Savoir-Faire</h2></div>
                         <div className="row">
                             <div className="bloc col">
                                 <Remote/>
-                                <h4>Élevage</h4>
+                                <h4>Équipements &<br/> Automatisme d'Élevage</h4>
                                 <hr className="bar"/>
                                 <p>
                                     Lorem ipsum dolor sit amet,
@@ -43,7 +35,7 @@ class Bps extends React.Component{
                                 </p>
                             </div><div className="bloc_1 col">
                                 <Motor fill="#fff" width="93" height="68"/>
-                                <h4>Industriel</h4>
+                                <h4>Équipements &<br/> Automatisme Industriel</h4>
                                 <hr className="bar"/>
                                 <p>
                                     Lorem ipsum dolor sit amet,
@@ -53,7 +45,7 @@ class Bps extends React.Component{
                                 </p>
                             </div><div className="bloc col">
                                 <Pump fill="#fff" width="46" height="62"/>
-                                <h4>Synertech</h4>
+                                <h4>Maintenance des<br/>Équipements Industriel</h4>
                                 <hr className="bar"/>
                                 <p>
                                     Lorem ipsum dolor sit amet,
@@ -63,7 +55,7 @@ class Bps extends React.Component{
                                 </p>
                             </div><div className="bloc_1 col">
                                 <Motor fill="#fff" width="93" height="68"/>
-                                <h4>Maintenance</h4>
+                                <h4>Synertech</h4>
                                 <hr className="bar"/>
                                 <p>
                                     Lorem ipsum dolor sit amet,

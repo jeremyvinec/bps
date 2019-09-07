@@ -35,6 +35,10 @@ a:hover {
     color: $green
 }
 
+a svg:hover{
+    color: $green
+}
+
 .title{
     margin: 50px;
     text-align: center;
@@ -89,4 +93,12 @@ p{
 
 .banner h1{
     margin: auto
+}
+
+.btn {
+    color: $darkSlateBlue
+}
+
+.btn:hover {
+    color: $darkSlateBlue
 }

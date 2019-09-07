@@ -7,6 +7,7 @@ import Services from '../components/pages/Services'
 import Contact from '../components/pages/Contact'
 import EAE from '../components/pages/EAE'
 import EAI from '../components/pages/EAI'
+import MEI from '../components/pages/MEI'
 import Synertech from '../components/pages/Synertech'
 import Detail from '../components/pages/Detail'
 
@@ -31,6 +32,9 @@ const Navigation = createSwitchNavigator({
     },
     EAI: {
         screen: EAI
+    },
+    MEI: {
+        screen: MEI
     },
     Synertech: {
         screen: Synertech

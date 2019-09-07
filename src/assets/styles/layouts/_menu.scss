@@ -24,6 +24,10 @@
     border-bottom: 2px solid $green;
 }
 
+.dropdown-item:active {
+    background-color: $green
+}
+
   @media screen and (max-width: 992px){
     .iconMenu {
         display: inline-block;

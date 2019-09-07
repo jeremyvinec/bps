@@ -36,7 +36,9 @@ class Detail extends React.Component{
 
     render(){
         const { thumbnails } = this.state
-        console.log(this.props)
+        const { state, goBack } = this.props.navigation
+        const params = state.params || {}
+        console.log(this.props.navigation.state)
         return(
               <React.Fragment>
                   <header>
@@ -64,7 +66,7 @@ class Detail extends React.Component{
                                     <a onClick={this._expendedText}>Read More</a>
                                     {this._getMoreText()}
                                 </div>
-                                <TouchableOpacity onPress={() => this.props.navigation.goBack()}>
+                                <TouchableOpacity onPress={() => goBack(params.go_back_key)}>
                                     <Cross with="20" height="20" fill="#666666"/>
                                 </TouchableOpacity>
                             </div>

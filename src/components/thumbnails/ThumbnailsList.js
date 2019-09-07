@@ -5,7 +5,8 @@ import ThumbnailsItem from './ThumbnailsItem'
 class Thumbnails extends React.Component{
 
     _displayDetail = (thumbnails) => {
-        this.props.navigation.navigate('Detail', { thumbnails: thumbnails })
+        const { state, navigate } = this.props.navigation
+        navigate('Detail', { thumbnails: thumbnails, go_back_key: state.key })
     }
 
     render(){

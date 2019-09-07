@@ -51,6 +51,7 @@ class Menu extends React.Component{
                         <div className={`dropdown-menu ${dropdown}`} aria-labelledby="navbarDropdown">
                         <a className="dropdown-item" href="/EAE">Équipements & Automatisme d'Élevage</a>
                         <a className="dropdown-item" href="/EAI">Équipements & Automatisme Industriel</a>
+                        <a className="dropdown-item" href="/MEI">Maintenance des Équipements Industriel</a>
                         <a className="dropdown-item" href="/Synertech">Synertech</a>
                         </div>
                     </li>

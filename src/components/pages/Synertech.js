@@ -16,10 +16,10 @@ export default class Synertech extends React.Component{
                         <div className="container">
                             <div className="banner">
                                 <h1>Synertech</h1>
-                                <ul> 
-                                    <li>Lignage Laser</li>
-                                    <li>Mesure Vibration</li>
-                                    <li>Expertise Technique</li>
+                                <ul className="list-inline"> 
+                                    <li className="list-inline-item">Lignage Laser</li>
+                                    <li className="list-inline-item">Mesure Vibration</li>
+                                    <li className="list-inline-item">Expertise Technique</li>
                                 </ul>
                             </div>
                                 <div className="" style={{textAlign: 'left'}}>
