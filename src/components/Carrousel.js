@@ -1,25 +1,27 @@
 import React from 'react'
 import { Carousel } from 'react-bootstrap'
 
+import entreprise from '../assets/img/entreprise.jpg'
+
 export default class Carrousel extends React.Component{
     render(){
         return(
-            <Carousel style={{marginTop: 105}}>
+            <Carousel>
             <Carousel.Item>
                 <img
                 className="d-block w-100"
-                src="https://mdbootstrap.com/img/Photos/Slides/img%20(35).jpg" // 800 * 400
-                alt="First slide"
+                src={entreprise} // 800 * 400
+                alt="Bretagne Pompes Services"
                 />
                 <Carousel.Caption>
-                <h3>First slide label</h3>
+                <h3>Bretagne Pompes Services</h3>
                 <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
                 <img
                 className="d-block w-100"
-                src="https://mdbootstrap.com/img/Photos/Slides/img%20(35).jpg"
+                src={entreprise}
                 alt="Third slide"
                 />
                 <Carousel.Caption>
@@ -30,7 +32,7 @@ export default class Carrousel extends React.Component{
             <Carousel.Item>
                 <img
                 className="d-block w-100"
-                src="https://mdbootstrap.com/img/Photos/Slides/img%20(35).jpg"
+                src={entreprise}
                 alt="Third slide"
                 />
                 <Carousel.Caption>

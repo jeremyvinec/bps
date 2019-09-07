@@ -19,8 +19,8 @@ class Bps extends React.Component{
                     <Menu/>
                     <Carrousel/>
                 </header>
-                <main>
-                    <section className="container">
+                <main className="container">
+                    <section>
                         <div className='title'><h2>Savoir-Faire</h2></div>
                         <div className="row">
                             <div className="bloc col">
@@ -66,7 +66,7 @@ class Bps extends React.Component{
                             </div>
                         </div>
                     </section>
-                    <section className="container">
+                    <section style={{height: 1000}}>
                         <div className="title">
                             <h2>La complémentarité de services <br/> au coeur de l’entreprise</h2>
                         </div>
@@ -82,23 +82,23 @@ class Bps extends React.Component{
                             </ul>
                         </div>
                         <div className="services_text2">
-                            <h3>Prescription -Vente</h3>
+                            <h3>Installation - Réalisation</h3>
                             <ul>
-                                <li><a href="#">Pompes industrielles</a></li>
-                                <li><a href="#">Moteurs électriques</a></li>
-                                <li><a href="#">Transmissions mécanique</a></li>
-                                <li><a href="#">Variation de fréquence</a></li>
+                                <li><a href="#">Systèmes automatisés</a></li>
+                                <li><a href="#">Systèmes de pompage</a></li>
+                                <li><a href="#">Electricité / Plomberie</a></li>
+                                <li><a href="#">Soudure gaz (PGP / PGN)</a></li>
                                 <li><a href="#">Systèmes de ventilation</a></li>
                             </ul>
                         </div>
                         <div className="services_text3">
-                            <h3>Prescription -Vente</h3>
+                            <h3>Réparation - Maintenance</h3>
                             <ul>
-                                <li><a href="#">Pompes industrielles</a></li>
-                                <li><a href="#">Moteurs électriques</a></li>
-                                <li><a href="#">Transmissions mécanique</a></li>
-                                <li><a href="#">Variation de fréquence</a></li>
-                                <li><a href="#">Systèmes de ventilation</a></li>
+                                <li><a href="#">Atelier de bobinage agrée</a></li>
+                                <li><a href="#">Réparation de pompes (toutes marques)</a></li>
+                                <li><a href="#">Réfection d'arbre et d'usinage</a></li>
+                                <li><a href="#">Maintenance sur site</a></li>
+                                <li><a href="#">Contrat d'entrtien</a></li>
                             </ul>
                         </div>
                     </section>
