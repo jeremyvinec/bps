@@ -1,3 +1,11 @@
+.savoirFaire a {
+    color: $white;
+}
+
+.savoirFaire a:hover {
+    color: $green;
+}
+
 .bloc {
     background-color: $lightPurple;
     width: 360px;

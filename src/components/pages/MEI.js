@@ -24,7 +24,7 @@ export default class MEI extends React.Component{
                             <div className="col text-left">
                                 <p>
                                 <b>Nous assurons la maintenance, la réparation et le bobinage de tous types, toutes marques et puissances de moteurs électriques, pompes et motoréducteurs.</b> 
-                                Notre service va de la simple révision standard à la réparation et au rebobinage complet de votre machine tournante. 
+                                <br/><br/>Notre service va de la simple révision standard à la réparation et au rebobinage complet de votre machine tournante. 
                                 Nous confectionnons nos propres bobines, équilibrons toutes les pièces tournantes sur site ou en atelier, assurons l'alignement laser et autres interventions de maintenances. 
                                 Nous prenons en charge la dépose et la repose sur site de vos équipements (transport compris).
                                 </p>
@@ -40,7 +40,7 @@ export default class MEI extends React.Component{
                             <div className="col text-left">
                                 <p>
                                 <b>Nous assurons la maintenance, la réparation de tous types, toutes marques et puissances de moteurs électriques, motoréducteurs et ensembles électromécaniques.</b> 
-                                Notre service va de la simple révision standard à la réparation complète de votre système. 
+                                <br/><br/>Notre service va de la simple révision standard à la réparation complète de votre système. 
                                 Nous confectionnons nos propres bobines, équilibrons toutes les pièces tournantes sur site ou en atelier, assurons l'alignement laser et autres interventions de maintenances. 
                                 Nous prenons en charge la dépose et la repose sur site de vos équipements (transport compris).
                                 </p>
@@ -56,7 +56,7 @@ export default class MEI extends React.Component{
                             <div className="col text-left">
                                 <p>
                                 <b>Nous assurons la maintenance, la réparation de tous types, toutes marques de pompe centrifuge, de relevage et alimentaire. </b>
-                                Notre service va de la simple révision standard à la réparation complète ou au remplacement de votre système. 
+                                <br/><br/>Notre service va de la simple révision standard à la réparation complète ou au remplacement de votre système. 
                                 Nous possédons un stock important de pièces détachées (joints, garnitures mécaniques et pièces d’usures) permettant un délai de réalisation très court.
                                 Nous prenons en charge la dépose et la repose sur site de vos équipements (transport compris).
                                 </p>
@@ -72,7 +72,7 @@ export default class MEI extends React.Component{
                             <div className="col text-left">
                                 <p>
                                 <b>Nous assurons la maintenance sur site, les démontages et remontages, et proposons des contrats de maintenance adaptés.</b> 
-                                Nous faisons intervenir sur vos sites des techniciens dont la compétence et l’expéri ence correspondent à la nature de la demande de service :
+                                <br/><br/>Nous faisons intervenir sur vos sites des techniciens dont la compétence et l’expéri ence correspondent à la nature de la demande de service :
                                 (pompes, électromécanique, électricité, motorisation , automatisme ….)
                                 Nos techniciens disposent des habilitations utiles (électrique, gaz, risque chimique …)
                                 Nos matériels de transport et, manutention son un atout non négligeable.

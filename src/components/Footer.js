@@ -33,48 +33,48 @@ export default class Footer extends React.Component{
                     <h6 className="text-uppercase font-weight-bold text-white">Société</h6>
                     <hr className="accent-2 mb-4 mt-0 d-inline-block mx-auto" style={{width: 60, backgroundColor: '#7c4dff'}}/>
                     <p>
-                        <a href="/societe">Entreprise</a>
-                    </p>
-                    <p>
                         <a href="/societe">Historique</a>
                     </p>
                     <p>
                         <a href="/societe">Activités</a>
                     </p>
                     <p>
+                        <a href="/societe">Nos Valeurs</a>
+                    </p>
+                    <p>
                         <a href="/societe">Partenaires</a>
                     </p>
                     </div>
                     <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-                    <h6 className="text-uppercase font-weight-bold text-white">Services</h6>
-                    <hr className="accent-2 mb-4 mt-0 d-inline-block mx-auto" style={{width: 60, backgroundColor: '#7c4dff'}}/>
-                    <p>
-                        <a href="#!">Élevage</a>
-                    </p>
-                    <p>
-                        <a href="#!">Industriel</a>
-                    </p>
-                    <p>
-                        <a href="#!">Synertech</a>
-                    </p>
-                    <p>
-                        <a href="#!">Maintenance</a>
-                    </p>
-                    </div>
-                    <div className="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
                     <h6 className="text-uppercase font-weight-bold text-white">Savoir-Faire</h6>
                     <hr className="accent-2 mb-4 mt-0 d-inline-block mx-auto" style={{width: 60, backgroundColor: '#7c4dff'}}/>
                     <p>
-                        <a href="#!">Automatisme</a>
+                        <a href="/EAE">Élevage</a>
                     </p>
                     <p>
-                        <a href="#!">Bobinage</a>
+                        <a href="/EAI">Industriel</a>
                     </p>
                     <p>
-                        <a href="#!">Pompage</a>
+                        <a href="/MEI">Maintenance</a>
                     </p>
                     <p>
-                        <a href="#!">Ventilation</a>
+                        <a href="/Synertech">Synertech</a>
+                    </p>
+                    </div>
+                    <div className="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <h6 className="text-uppercase font-weight-bold text-white">Services</h6>
+                    <hr className="accent-2 mb-4 mt-0 d-inline-block mx-auto" style={{width: 60, backgroundColor: '#7c4dff'}}/>
+                    <p>
+                        <a href="/Services">Compétence</a>
+                    </p>
+                    <p>
+                        <a href="/Services">Dépannage</a>
+                    </p>
+                    <p>
+                        <a href="/Services">Fourniture</a>
+                    </p>
+                    <p>
+                        <a href="/Services">Astreinte</a>
                     </p>
                     </div>
                     <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
@@ -87,7 +87,7 @@ export default class Footer extends React.Component{
                     <p>
                         <FontAwesomeIcon icon={faFax} color='white'/> Fax: 02 98 68 48 77</p>
                     <p>
-                        <FontAwesomeIcon icon={faEnvelope} color='white'/> contact@bps29.fr</p>
+                        <FontAwesomeIcon icon={faEnvelope} color='white'/> <a href="/Contact">contact@bps29.fr</a></p>
                     </div>
                 </div>
                 </div>

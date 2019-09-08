@@ -5,9 +5,10 @@ import Footer from '../Footer'
 
 
 // Savoir-Faire
-import Remote from '../../assets/svg/Remote'
-import Pump from '../../assets/svg/Pump'
-import Motor from '../../assets/svg/Motor'
+import Farm from '../../assets/svg/Farm'
+import Industry from '../../assets/svg/Industry'
+import Maintenance from '../../assets/svg/Maintenance'
+import Laser from '../../assets/svg/Laser'
 
 import Services from '../../assets/svg/Services'
 
@@ -20,12 +21,12 @@ class Bps extends React.Component{
                     <Carrousel/>
                 </header>
                 <main className="container">
-                    <section>
+                    <section className="savoirFaire">
                         <div className='title'><h2>Savoir-Faire</h2></div>
                         <div className="row">
                             <div className="bloc col">
-                                <Remote/>
-                                <h4>Équipements &<br/> Automatisme d'Élevage</h4>
+                                <Farm width="80" height="80" fill="white"/>
+                                <h4><a href="/EAE">Équipements &<br/> Automatisme d'Élevage</a></h4>
                                 <hr className="bar"/>
                                 <p>
                                     Lorem ipsum dolor sit amet,
@@ -34,8 +35,8 @@ class Bps extends React.Component{
                                     commodo posuere. Integer. 
                                 </p>
                             </div><div className="bloc_1 col">
-                                <Motor fill="#fff" width="93" height="68"/>
-                                <h4>Équipements &<br/> Automatisme Industriel</h4>
+                                <Industry fill="#fff" width="80" height="80"/>
+                                <h4><a href="/EAI">Équipements &<br/> Automatisme Industriel</a></h4>
                                 <hr className="bar"/>
                                 <p>
                                     Lorem ipsum dolor sit amet,
@@ -44,8 +45,8 @@ class Bps extends React.Component{
                                     commodo posuere. Integer. 
                                 </p>
                             </div><div className="bloc col">
-                                <Pump fill="#fff" width="46" height="62"/>
-                                <h4>Maintenance des<br/>Équipements Industriel</h4>
+                                <Maintenance width="80" height="80" fill="white"/>
+                                <h4><a href="/MEI">Maintenance des<br/>Équipements Industriel</a></h4>
                                 <hr className="bar"/>
                                 <p>
                                     Lorem ipsum dolor sit amet,
@@ -54,8 +55,8 @@ class Bps extends React.Component{
                                     commodo posuere. Integer. 
                                 </p>
                             </div><div className="bloc_1 col">
-                                <Motor fill="#fff" width="93" height="68"/>
-                                <h4>Synertech</h4>
+                                <Laser fill="#fff" width="80" height="80"/>
+                                <h4><a href="/Synertech">Synertech</a></h4>
                                 <hr className="bar"/>
                                 <p>
                                     Lorem ipsum dolor sit amet,
@@ -66,7 +67,7 @@ class Bps extends React.Component{
                             </div>
                         </div>
                     </section>
-                    <section style={{height: 1000}}>
+                    <section id="services" style={{height: 1000}}>
                         <div className="title">
                             <h2>La complémentarité de services <br/> au coeur de l’entreprise</h2>
                         </div>

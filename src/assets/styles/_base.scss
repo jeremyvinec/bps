@@ -8,6 +8,12 @@
 	src: url('../fonts/Satisfy-Regular.ttf')
 }
 
+@media screen and (max-width: 1140px){
+    #services{
+        display: none;
+    }
+}
+
 body{
     font-family: 'Roboto', sans-serif;
     color: $darkSlateBlue;
