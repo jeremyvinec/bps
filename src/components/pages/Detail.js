@@ -7,7 +7,7 @@ import Footer from '../Footer'
 import Cover from '../thumbnails/Cover'
 import Cross from '../../assets/svg/Cross'
 
-class Detail extends React.Component{
+export default class Detail extends React.Component{
 
     constructor(props){
         super(props)
@@ -41,10 +41,9 @@ class Detail extends React.Component{
 
     render(){
         const { thumbnails } = this.state
-        const { state, goBack } = this.props.navigation
+        const { state, navigate } = this.props.navigation
         const Read = this.state.read ? 'Read Less' : 'Read More'
         const params = state.params || {}
-        console.log(thumbnails)
         return(
               <React.Fragment>
                   <header>
@@ -72,7 +71,7 @@ class Detail extends React.Component{
                                     </p>
                                     <a className="btn" onClick={this._expendedText}>{Read}</a>
                                 </div>
-                                <TouchableOpacity onPress={() => goBack(params.go_back_key)}>
+                                <TouchableOpacity onPress={() => navigate(params.go_back_key)}>
                                     <Cross with="20" height="20" fill="#666666"/>
                                 </TouchableOpacity>
                             </div>
@@ -84,5 +83,3 @@ class Detail extends React.Component{
         )
     }
 }
-
-export default Detail
