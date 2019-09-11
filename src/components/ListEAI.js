@@ -3,7 +3,7 @@ import { TouchableOpacity } from 'react-native'
 import  { connect } from 'react-redux'
 
 import Motor from '../assets/svg/Motor'
-import Bobinage from '../assets/svg/Bobinage'
+import Winding from '../assets/svg/Winding'
 import Pump from '../assets/svg/Pump'
 import Electricity from '../assets/svg/Electricity'
 import Ventilation from '../assets/svg/Ventilation'
@@ -68,7 +68,7 @@ class listEAI extends React.Component{
                     </TouchableOpacity>
                     <TouchableOpacity onPress={() => this._filter('bobinage')}>
                         <li className="list-group-item d-flex justify-content-between align-items-center">
-                            <Bobinage fill="#27e29b" width="40" height="30"/>
+                            <Winding fill="#27e29b" width="40" height="30"/>
                             Bobinage
                             <span className="badge badge-primary badge-pill">{bobinage}</span>
                         </li>

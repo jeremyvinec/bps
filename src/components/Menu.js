@@ -36,11 +36,10 @@ class Menu extends React.Component{
                     <div className="bar2"></div>
                     <div className="bar3"></div>
                 </div>
-                
-                <div className={`navbar-collapse justify-content-md-center ${show}`} id="navbarsExample10">
-                <div className="logo">
+                <a href="/" className="navbar-brand">
                     <img src={logo} height="35px"/>
-                </div>
+                </a>
+                <div className={`navbar-collapse justify-content-md-center ${show}`} id="navbarsExample10">
                 <ul className="navbar-nav">
                     <li className="nav-item">
                     <a className="nav-link" href='/'>Accueil</a>

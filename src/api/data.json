@@ -101,7 +101,7 @@
             "id":"8", 
             "name":"Moteurs Reducteurs", 
             "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis efficitur.", 
-            "type":"moteur_reducteur"
+            "type":"moteurs_reducteurs"
         },
         {
             "id":"9", 

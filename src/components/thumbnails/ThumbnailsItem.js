@@ -7,7 +7,6 @@ class Thumbnails extends React.Component{
 
     render(){
         const { thumbnails, displayDetail } = this.props
-        console.log(thumbnails.type)
         return(
                 <TouchableOpacity onPress={() => displayDetail(thumbnails)}>
                     <div className="card">
