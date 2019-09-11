@@ -16,13 +16,8 @@ export default class Synertech extends React.Component{
                         <div className="container">
                             <div className="banner">
                                 <h1>Synertech</h1>
-                                <ul className="list-inline"> 
-                                    <li className="list-inline-item">Lignage Laser</li>
-                                    <li className="list-inline-item">Mesure Vibration</li>
-                                    <li className="list-inline-item">Expertise Technique</li>
-                                </ul>
                             </div>
-                                <div className="" style={{textAlign: 'left'}}>
+                                <div className="text-left">
                                     <div>
                                         <h2>Actions préventives :</h2>
                                         <h3>→ Identifier, anticiper et corriger les défauts sur machines tournantes.</h3>

@@ -1,6 +1,7 @@
 import React from 'react'
 import Menu from '../Menu'
 import Carrousel from '../Carrousel'
+import Footer from '../Footer'
 
 import bobinage from '../../assets/img/workshop/bobinage.png'
 import pompes from '../../assets/img/workshop/pompes.png'
@@ -21,7 +22,10 @@ export default class MEI extends React.Component{
                             <h1>Atelier de bobinage</h1>
                         </div>
                         <div className='row'>
-                            <div className="col text-left">
+                            <div className="col-4">
+                                <img src={bobinage} alt='bobinage' height="300px"/>
+                            </div>
+                            <div className="col-6 text-left">
                                 <p>
                                 <b>Nous assurons la maintenance, la réparation et le bobinage de tous types, toutes marques et puissances de moteurs électriques, pompes et motoréducteurs.</b> 
                                 <br/><br/>Notre service va de la simple révision standard à la réparation et au rebobinage complet de votre machine tournante. 
@@ -29,15 +33,15 @@ export default class MEI extends React.Component{
                                 Nous prenons en charge la dépose et la repose sur site de vos équipements (transport compris).
                                 </p>
                             </div>
-                            <div className="col">
-                                <img scr={bobinage} alt='bobinage'/>
-                            </div>
                         </div>
                         <div className='banner'>
                             <h1>Atelier de réparation électromécanique</h1>
                         </div>
                         <div className='row'>
-                            <div className="col text-left">
+                            <div className="col-4">
+                                <img src={electromecanique} alt='electromecanique' height="300px"/>
+                            </div>
+                            <div className="col-6 text-left">
                                 <p>
                                 <b>Nous assurons la maintenance, la réparation de tous types, toutes marques et puissances de moteurs électriques, motoréducteurs et ensembles électromécaniques.</b> 
                                 <br/><br/>Notre service va de la simple révision standard à la réparation complète de votre système. 
@@ -45,15 +49,15 @@ export default class MEI extends React.Component{
                                 Nous prenons en charge la dépose et la repose sur site de vos équipements (transport compris).
                                 </p>
                             </div>
-                            <div className="col">
-                                <img src={electromecanique} alt='electromecanique'/>
-                            </div>
                         </div>
                         <div className='banner'>
                             <h1>Atelier de réparation de pompes</h1>
                         </div>
                         <div className='row'>
-                            <div className="col text-left">
+                            <div className="col-4">
+                                <img src={pompes} alt='pompes' height="300px"/>
+                            </div>
+                            <div className="col-6 text-left">
                                 <p>
                                 <b>Nous assurons la maintenance, la réparation de tous types, toutes marques de pompe centrifuge, de relevage et alimentaire. </b>
                                 <br/><br/>Notre service va de la simple révision standard à la réparation complète ou au remplacement de votre système. 
@@ -61,15 +65,15 @@ export default class MEI extends React.Component{
                                 Nous prenons en charge la dépose et la repose sur site de vos équipements (transport compris).
                                 </p>
                             </div>
-                            <div className="col">
-                                <img scr={pompes} alt='pompes'/>
-                            </div>
                         </div>
                         <div className='banner'>
                             <h1>Intervantion sur site et contrat de maintenance</h1>
                         </div>
                         <div className='row'>
-                            <div className="col text-left">
+                            <div className="col-4">
+                                <img src={intervantion} alt='intervention' height="300px"/>
+                            </div>
+                            <div className="col-6 text-left">
                                 <p>
                                 <b>Nous assurons la maintenance sur site, les démontages et remontages, et proposons des contrats de maintenance adaptés.</b> 
                                 <br/><br/>Nous faisons intervenir sur vos sites des techniciens dont la compétence et l’expéri ence correspondent à la nature de la demande de service :
@@ -78,12 +82,10 @@ export default class MEI extends React.Component{
                                 Nos matériels de transport et, manutention son un atout non négligeable.
                                 </p>
                             </div>
-                            <div className="col">
-                                <img scr={intervantion} alt='intervention'/>
-                            </div>
                         </div>
                     </section>
                 </main>
+                <Footer/>
             </React.Fragment>
         )
     }

@@ -89,14 +89,9 @@ p{
     font-size: 1em;
 }
 
-/*.logo img {
-    position: absolute;
-    top: 40%;
-}*/
-
 .banner{
     background-color: #adb5fe;
-    height: 370px;
+    height: 200px;
     margin-top: 50px;
     margin-bottom: 50px;
     display: flex;
@@ -112,4 +107,12 @@ p{
 
 .btn:hover {
     color: $darkSlateBlue
+}
+
+.spacing{
+	margin-top: 2em;
+}
+
+.spacing-section{
+	margin-top: 10em
 }

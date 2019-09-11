@@ -36,7 +36,7 @@ class Menu extends React.Component{
                     <div className="bar2"></div>
                     <div className="bar3"></div>
                 </div>
-                <a href="/" className="navbar-brand">
+                <a href="/" className="logo">
                     <img src={logo} height="35px"/>
                 </a>
                 <div className={`navbar-collapse justify-content-md-center ${show}`} id="navbarsExample10">

@@ -47,10 +47,7 @@ export default class Societe extends React.Component{
                                 </p>
                             </div>
                         </div>
-                        <div className='banner'>
-                            <h1>Exemple</h1>
-                        </div>
-                        <div className="row">
+                        <div className="row spacing">
                             <div className="col">
                                 <h2>Activités</h2>
                                 <p>
@@ -101,10 +98,10 @@ export default class Societe extends React.Component{
                                 </p>
                             </div>
                         </div>
-                        <div>
+                        <div className="spacing">
                             <h2>Nos partenaires</h2>
                         </div>
-                        <div className="row">
+                        <div className="row spacing">
                             <div className="col-sm"><img src={grundfos} width="150" alt="grundfos"/></div>
                             <div className="col-sm"><img src={ebara} width="150" alt="ebara"/></div>
                             <div className="col-sm"><img src={schneider} width="150" alt="schneider"/></div>

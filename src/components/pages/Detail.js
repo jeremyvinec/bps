@@ -64,11 +64,11 @@ export default class Detail extends React.Component{
                                     <h1 style={{lineHeight: 0}}>{thumbnails.name}</h1>
                                     <small>{thumbnails.type}</small>
                                     <h3>Information</h3>
-                                    <p>
+                                    <div>
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus lorem tortor, feugiat et varius quis, dictum id erat. 
                                     Morbi tincidunt hendrerit lorem, at tincidunt velit. Morbi consectetur non arcu at consectetur.
                                     {this._getMoreText()}
-                                    </p>
+                                    </div>
                                     <a className="btn" onClick={this._expendedText}>{Read}</a>
                                 </div>
                                 <TouchableOpacity onPress={() => navigate(params.go_back_key)}>

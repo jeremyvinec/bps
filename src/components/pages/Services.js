@@ -34,9 +34,7 @@ export default class Services extends React.Component{
                                 </p>
                             </div>
                         </div>
-                        <div className='banner'>
-                        </div>
-                        <div className="row">
+                        <div className="row spacing">
                             <div className="col">
                                 <h2>Dépannage : forte réactivité</h2>
                                 <p>
@@ -51,21 +49,19 @@ export default class Services extends React.Component{
                                 </p>
                             </div>
                         </div>
-                        <div className='banner'>
-                        </div>
-                        <div>
-                            <h2>Fourniture rapide de pièces de rechange</h2>
-                            <p>
-                                nous disposons d'un stock important de pièces de rechange quelle que soit la marques des équipements composant votre installation.
-                            </p>
-                        </div>
-                        <div className='banner'>
-                        </div>
-                        <div>
-                            <h2>Astreinte : disponibilité 24/24 et 7j/7</h2>
-                            <p>
-                                *suivant conditions de contrat
-                            </p>
+                        <div className="row spacing">
+                            <div className="col">
+                                <h2>Fourniture rapide de pièces de rechange</h2>
+                                <p>
+                                    nous disposons d'un stock important de pièces de rechange quelle que soit la marques des équipements composant votre installation.
+                                </p>
+                            </div>
+                            <div className="col">
+                                <h2>Astreinte : disponibilité 24/24 et 7j/7</h2>
+                                <p>
+                                    *suivant conditions de contrat
+                                </p>
+                            </div>
                         </div>
                     </section>
                 </main>
