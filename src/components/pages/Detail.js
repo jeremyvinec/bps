@@ -4,6 +4,7 @@ import Menu from '../Menu'
 import Carrousel from '../Carrousel'
 import Footer from '../Footer'
 
+import Cover from '../thumbnails/Cover'
 import Cross from '../../assets/svg/Cross'
 
 class Detail extends React.Component{
@@ -38,7 +39,7 @@ class Detail extends React.Component{
         const { thumbnails } = this.state
         const { state, goBack } = this.props.navigation
         const params = state.params || {}
-        console.log(this.props.navigation.state)
+        console.log(thumbnails)
         return(
               <React.Fragment>
                   <header>
@@ -53,7 +54,7 @@ class Detail extends React.Component{
                           <div className="container">
                             <div className="row">
                                 <div className="col-6 text-left">
-                                    <img className="img-fluid" src="http://placehold.it/500x750" alt=""/>
+                                    <img className="img-fluid" src={Cover[thumbnails.type]} alt=""/>
                                 </div>
                                 <div className="col-4 text-left">
                                     <h1 style={{lineHeight: 0}}>{thumbnails.name}</h1>

@@ -1,0 +1,6 @@
+exports.pompes = require('../../assets/img/cover/pompes.png')
+exports.bobinage = require('../../assets/img/cover/bobinage.jpg')
+exports.vibrant = require('../../assets/img/cover/vibrant.jpg')
+exports.moteurs_reducteurs = require('../../assets/img/cover/moteurs_reducteurs.jpg')
+exports.tambour_moteur = require('../../assets/img/cover/tambour_moteur.jpg')
+exports.variateur_mecanique = require('../../assets/img/cover/variateur_mecanique.jpg')

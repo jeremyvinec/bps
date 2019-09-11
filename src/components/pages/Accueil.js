@@ -75,31 +75,31 @@ class Bps extends React.Component{
                         <div className="services_text">
                             <h3>Prescription -Vente</h3>
                             <ul>
-                                <li><a href="#">Pompes industrielles</a></li>
-                                <li><a href="#">Moteurs électriques</a></li>
-                                <li><a href="#">Transmissions mécanique</a></li>
-                                <li><a href="#">Variation de fréquence</a></li>
-                                <li><a href="#">Systèmes de ventilation</a></li>
+                                <li><a href="/EAI">Pompes industrielles</a></li>
+                                <li><a href="/EAI">Moteurs électriques</a></li>
+                                <li><a href="/EAI">Transmissions mécanique</a></li>
+                                <li><a href="/EAI">Variation de fréquence</a></li>
+                                <li><a href="/EAI">Systèmes de ventilation</a></li>
                             </ul>
                         </div>
                         <div className="services_text2">
                             <h3>Installation - Réalisation</h3>
                             <ul>
-                                <li><a href="#">Systèmes automatisés</a></li>
-                                <li><a href="#">Systèmes de pompage</a></li>
-                                <li><a href="#">Electricité / Plomberie</a></li>
-                                <li><a href="#">Soudure gaz (PGP / PGN)</a></li>
-                                <li><a href="#">Systèmes de ventilation</a></li>
+                                <li><a href="/EAE">Systèmes automatisés</a></li>
+                                <li><a href="/EAE">Systèmes de pompage</a></li>
+                                <li><a href="/EAE">Electricité / Plomberie</a></li>
+                                <li><a href="/EAE">Soudure gaz (PGP / PGN)</a></li>
+                                <li><a href="/EAE">Systèmes de ventilation</a></li>
                             </ul>
                         </div>
                         <div className="services_text3">
                             <h3>Réparation - Maintenance</h3>
                             <ul>
-                                <li><a href="#">Atelier de bobinage agrée</a></li>
-                                <li><a href="#">Réparation de pompes (toutes marques)</a></li>
-                                <li><a href="#">Réfection d'arbre et d'usinage</a></li>
-                                <li><a href="#">Maintenance sur site</a></li>
-                                <li><a href="#">Contrat d'entrtien</a></li>
+                                <li><a href="/MEI">Atelier de bobinage agrée</a></li>
+                                <li><a href="/MEI">Réparation de pompes (toutes marques)</a></li>
+                                <li><a href="/MEI">Réfection d'arbre et d'usinage</a></li>
+                                <li><a href="/MEI">Maintenance sur site</a></li>
+                                <li><a href="/MEI">Contrat d'entretien</a></li>
                             </ul>
                         </div>
                     </section>
