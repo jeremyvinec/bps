@@ -2,10 +2,10 @@ import React from 'react'
 import Menu from '../Menu'
 import Carrousel from '../Carrousel'
 
-import bobinage from '../../assets/img/bobinage.png'
-import pompes from '../../assets/img/pompes.png'
-import intervantion from '../../assets/img/intervantion.png'
-import electromecanique from '../../assets/img/electromecanique.png'
+import bobinage from '../../assets/img/workshop/bobinage.png'
+import pompes from '../../assets/img/workshop/pompes.png'
+import intervantion from '../../assets/img/workshop/intervantion.png'
+import electromecanique from '../../assets/img/workshop/electromecanique.png'
 
 export default class MEI extends React.Component{
     render(){
@@ -66,7 +66,7 @@ export default class MEI extends React.Component{
                             </div>
                         </div>
                         <div className='banner'>
-                            <h1>Intervantion sur site & contrat de maintenance</h1>
+                            <h1>Intervantion sur site et contrat de maintenance</h1>
                         </div>
                         <div className='row'>
                             <div className="col text-left">

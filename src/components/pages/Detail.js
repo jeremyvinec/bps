@@ -14,12 +14,16 @@ class Detail extends React.Component{
 
         this.state = {
             expended: false,
+            read: false,
             thumbnails: props.navigation.getParam('thumbnails')
         }
     }
 
-    _expendedText(){
-        this.setState({ expended: true })
+    _expendedText = () => {
+        this.setState({ 
+            expended: !this.state.expended,
+            read: !this.state.read 
+        })
     }
 
     _getMoreText(){
@@ -38,6 +42,7 @@ class Detail extends React.Component{
     render(){
         const { thumbnails } = this.state
         const { state, goBack } = this.props.navigation
+        const Read = this.state.read ? 'Read Less' : 'Read More'
         const params = state.params || {}
         console.log(thumbnails)
         return(
@@ -63,9 +68,9 @@ class Detail extends React.Component{
                                     <p>
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus lorem tortor, feugiat et varius quis, dictum id erat. 
                                     Morbi tincidunt hendrerit lorem, at tincidunt velit. Morbi consectetur non arcu at consectetur.
-                                    </p>
-                                    <a onClick={this._expendedText}>Read More</a>
                                     {this._getMoreText()}
+                                    </p>
+                                    <a className="btn" onClick={this._expendedText}>{Read}</a>
                                 </div>
                                 <TouchableOpacity onPress={() => goBack(params.go_back_key)}>
                                     <Cross with="20" height="20" fill="#666666"/>

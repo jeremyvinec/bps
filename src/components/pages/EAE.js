@@ -10,8 +10,7 @@ import links from '../../data/list'
 
 class EAE extends React.Component{
     render(){
-        const { data, filter, navigation } = this.props
-        console.log(this.props)
+        const { filter, navigation } = this.props
         return(
             <React.Fragment>
                 <header>
