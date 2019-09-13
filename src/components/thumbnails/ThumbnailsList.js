@@ -2,7 +2,7 @@ import React from 'react'
 import { StyleSheet, FlatList } from 'react-native'
 import ThumbnailsItem from './ThumbnailsItem'
 
-class Thumbnails extends React.Component{
+export default class Thumbnails extends React.Component{
 
     _displayDetail = (thumbnails) => {
         const { state, navigate } = this.props.navigation
@@ -13,7 +13,6 @@ class Thumbnails extends React.Component{
         const { navigation }  = this.props
         return(
             <FlatList
-                style={styles.list}
                 data={this.props.thumbnails}
                 keyExtractor={(item) => item.id.toString()}
                 numColumns={3}
@@ -28,11 +27,3 @@ class Thumbnails extends React.Component{
         )
     }
 }
-
-const styles = StyleSheet.create({
-    list: {
-        //flexFlow: 'column wrap !important',
-    }
-})
-
-export default Thumbnails

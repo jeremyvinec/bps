@@ -10,7 +10,7 @@ export default class Footer extends React.Component{
                 <div style={{backgroundColor: '#6351ce'}}>
                 <div className="container">
                     <div className="row py-4 d-flex align-items-center">
-                    <div className="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+                    <div className="text-center text-md-left mb-4 mb-md-0">
                         <p className="mb-0">Connectez-vous avec nous sur les réseaux sociaux !</p>
                     </div>
                     <div className="col-md-6 col-lg-7 text-center text-md-right">

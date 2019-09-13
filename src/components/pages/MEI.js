@@ -16,8 +16,8 @@ export default class MEI extends React.Component{
                     <Menu/>
                     <Carrousel/>
                 </header>
-                <main>
-                    <section className='container'>
+                <main className='container'>
+                    <section>
                         <div className='banner'>
                             <h1>Atelier de bobinage</h1>
                         </div>
