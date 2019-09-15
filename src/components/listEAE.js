@@ -44,6 +44,7 @@ class listEAE extends React.Component{
     }
 
     _filter(text){
+        console.log('filter')
         const newData = this.props.thumbnails.filter(item => {
             const itemData = `${item.type}`
             return itemData.indexOf(text) > -1

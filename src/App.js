@@ -1,13 +1,10 @@
 import React from 'react';
 import Navigation from './navigation/Navigation'
-import './App.css';
 import { Provider } from 'react-redux'
 import { persistStore } from 'redux-persist'
 import { PersistGate } from 'redux-persist/es/integration/react'
 import configureStore from './store/configureStore';
 import { loadData } from './actions/dataActions'
-console.disableYellowBox = true;
-console.ignoredYellowBox = ['Warning: Each', 'Warning: Failed'];
 
 const store = configureStore()
 

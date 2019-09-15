@@ -1,10 +1,11 @@
 import React from 'react'
-import { StyleSheet, FlatList } from 'react-native'
+import { FlatList } from 'react-native'
 import ThumbnailsItem from './ThumbnailsItem'
 
 export default class Thumbnails extends React.Component{
 
     _displayDetail = (thumbnails) => {
+        console.log(thumbnails)
         const { state, navigate } = this.props.navigation
         navigate('Detail', { thumbnails: thumbnails, go_back_key: state.key })
     }
@@ -14,7 +15,7 @@ export default class Thumbnails extends React.Component{
         return(
             <FlatList
                 data={this.props.thumbnails}
-                keyExtractor={(item) => item.id.toString()}
+                keyExtractor={(item) => item.id}//toString()
                 numColumns={3}
                 renderItem={({item}) => (
                     <ThumbnailsItem

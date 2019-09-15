@@ -9,8 +9,17 @@ import { connect } from 'react-redux'
 import links from '../../data/list'
 
 class EAE extends React.Component{
+
+    _thumbnails = (thumbnails, filter) => {
+        if(filter === ''){
+            return thumbnails
+        } else{
+            return filter
+        }
+    }
+
     render(){
-        const { filter, navigation } = this.props
+        const { thumbnails, filter, navigation } = this.props
         return(
             <React.Fragment>
                 <header>
@@ -24,11 +33,11 @@ class EAE extends React.Component{
                         </div>
                         <div className='row'>
                             <div className='col-3'>
-                                <ListEAE links={links}/>
+                                <ListEAE links={links.EAE}/>
                             </div>
                             <div className='col-9'>
                                 <ThumbnailsList
-                                    thumbnails={filter}
+                                    thumbnails={this._thumbnails(thumbnails, filter)}
                                     navigation={navigation}
                                 />
                             </div>
@@ -43,7 +52,7 @@ class EAE extends React.Component{
 
 const mapStateToProps = (state) => {
     return{
-        data: state.data.EAE,
+        thumbnails: state.data.EAE,
         filter: state.filter
     }
 }

@@ -6,10 +6,20 @@ import ThumbnailsList from '../thumbnails/ThumbnailsList'
 import ListEAI from '../ListEAI'
 import { connect} from 'react-redux'
 
+import links from '../../data/list'
+
 class EAI extends React.Component{
+
+    _thumbnails = (thumbnails, filter) => {
+        if(filter === ''){
+            return thumbnails
+        } else{
+            return filter
+        }
+    }
+
     render(){
-        const { data, navigation, filter } = this.props
-        console.log(this.props)
+        const { thumbnails, filter, navigation } = this.props
         return(
             <React.Fragment>
                 <header>
@@ -23,13 +33,12 @@ class EAI extends React.Component{
                         </div>
                         <div className='row'>
                             <div className='col-3'>
-                                <ListEAI
-                                    thumbnails={data}
-                                />
+                                <ListEAI links={links.EAI}/>
                             </div>
                             <div className='col-9'>
                                 <ThumbnailsList
-                                    thumbnails={filter}
+                                    thumbnails={this._thumbnails(thumbnails, filter)}
+                                    filter={filter}
                                     navigation={navigation}
                                 />
                             </div>
@@ -44,7 +53,7 @@ class EAI extends React.Component{
 
 const mapStateToProps = (state) => {
     return{
-        data: state.data.EAI,
+        thumbnails: state.data.EAI,
         filter: state.filter
     }
 }
