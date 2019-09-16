@@ -1,8 +1,6 @@
 import React from 'react'
 import ReactMapGL from 'react-map-gl';
 
-const MAPBOX_TOKEN = 'pk.eyJ1IjoiamVyZW15dmluZWMiLCJhIjoiY2swN3hsMnU0MDRwbzNjbW5maXYwY3ppOSJ9.5rK9IPnsM19j7rnnugXZrA'
-
 export default class Map extends React.Component{
     state = {
         viewport: {
@@ -15,11 +13,18 @@ export default class Map extends React.Component{
       };
     
       render() {
+        const { viewport } = this.state
         return (
           <ReactMapGL
-            {...this.state.viewport}
+            {... this.state}
+            mapboxApiAccessToken={process.env.REACT_APP_MAPBOX_TOKEN}
+            mapStyle="mapbox://styles/mapbox/outdoors-v11"
+            width={viewport.width}
+            height={viewport.height}
+            latitude={viewport.latitude}
+            longitude={viewport.longitude}
+            zoom={viewport.zoom}
             onViewportChange={(viewport) => this.setState({viewport})}
-            mapboxApiAccessToken={MAPBOX_TOKEN}
           />
         );
       }
