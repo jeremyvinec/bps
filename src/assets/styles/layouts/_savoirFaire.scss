@@ -55,4 +55,8 @@
     .col{
         flex-basis: auto;
     }
+
+    .col-4{
+        max-width: none;
+    }
 }

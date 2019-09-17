@@ -12,3 +12,32 @@
 .css-view-1dbjc4n {
     flex-flow: column wrap;
 }
+
+.filter{
+    display: none
+}
+
+@media screen and (max-width: 992px){
+    .col-3 {
+        max-width: none;
+        flex: auto;
+        margin-top: 5em;
+    }
+
+    .col-9 {
+        margin-top: 5em;
+        flex: auto;
+    }
+
+    .filter{
+        display: block
+    }
+
+    .displayFilter{
+        display: none
+    }
+
+    .card{
+        width: 10rem;
+    }
+}

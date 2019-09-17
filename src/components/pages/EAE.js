@@ -10,6 +10,13 @@ import links from '../../data/list'
 
 class EAE extends React.Component{
 
+    constructor(props){
+        super(props)
+        this.state = {
+            filter: false
+        }
+    }
+
     _thumbnails = (thumbnails, filter) => {
         if(filter === ''){
             return thumbnails
@@ -18,8 +25,13 @@ class EAE extends React.Component{
         }
     }
 
+    _filter = () => {
+        this.setState({ filter: !this.state.filter })
+    }
+
     render(){
         const { thumbnails, filter, navigation } = this.props
+        const displayFilter = this.state.filter ? '' : 'displayFilter'
         return(
             <React.Fragment>
                 <header>
@@ -32,7 +44,8 @@ class EAE extends React.Component{
                             <h1>Équipement & automatisme industriel</h1>
                         </div>
                         <div className='row'>
-                            <div className='col-3'>
+                            <button className="contact1-form-btn filter" onClick={this._filter}>Filtre</button>
+                            <div className={`col-3 ${displayFilter}`}>
                                 <ListEAE links={links.EAE}/>
                             </div>
                             <div className='col-9'>

@@ -1,13 +1,16 @@
 import React from 'react'
 import ReactMapGL from 'react-map-gl';
+import { Marker } from 'react-map-gl'
+
+import bps from '../assets/img/logo/bps.png'
 
 export default class Map extends React.Component{
     state = {
         viewport: {
           width: '100%',
           height: '50vh',
-          latitude: -3.978124,
-          longitude: 48.530969,
+          latitude: 48.530969,
+          longitude: -3.978124,
           zoom: 8
         }
       };
@@ -25,7 +28,11 @@ export default class Map extends React.Component{
             longitude={viewport.longitude}
             zoom={viewport.zoom}
             onViewportChange={(viewport) => this.setState({viewport})}
-          />
+          >
+            <Marker latitude={48.530969} longitude={-3.978124} offsetLeft={-20} offsetTop={-10}>
+              <img src={bps} width="50" />
+            </Marker>
+          </ReactMapGL>
         );
       }
 }
